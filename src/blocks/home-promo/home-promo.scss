@@ -6,6 +6,10 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  background: url(../img/promo-bg.jpg) no-repeat;
+  background-size: cover;
+  height: 70vh;
+
   &__container {
     @include container();
   }
