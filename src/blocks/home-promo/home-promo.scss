@@ -1,0 +1,21 @@
+// В этом файле должны быть стили для БЭМ-блока home-promo, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.home-promo {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__container {
+    @include container();
+  }
+
+  &__grid {
+    @include row();
+  }
+
+  &__info {
+    @include col(xl, 5);
+    margin-left: auto;
+  }
+}

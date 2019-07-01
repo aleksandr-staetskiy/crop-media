@@ -1,0 +1,27 @@
+extends ../pug/layout.pug
+
+block meta
+  title Главная
+  meta(name='description', content='')
+
+//- block append head
+//-   link(rel='stylesheet', href='css/some.css')
+
+block nav
+  +main-nav('10')
+
+block content
+  .home-promo
+    .home-promo__container
+      .home-promo__grid
+        .home-promo__info
+          h1.home-promo__title crop media
+          p.promo__descr Lorem ipsum dolor sit amet consectetur.
+          button.btn.promo__btn кликни меня
+
+
+//- block footer
+//-   p footer
+
+//- block append page-bottom
+//-   script(src='js/some.js')
