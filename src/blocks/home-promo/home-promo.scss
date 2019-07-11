@@ -3,12 +3,10 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .home-promo {
+  height: 70vh;
+  position: relative;
 
   $block-name:                &; // #{$block-name}__element
-
-  background: url(../img/promo-bg.jpg) no-repeat;
-  background-size: cover;
-  height: 70vh;
 
   &__container {
     @include container();
@@ -22,4 +20,53 @@
     @include col(xl, 5);
     margin-left: auto;
   }
+
+  &__video-container {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__background-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+  }
+
+  &__video-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://vjs.zencdn.net/v/oceans.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__content {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(1, 1, 1, 0.276);
+    color: white;
+    padding:10px 10px 50px 10px;
+    z-index: 2;
+  }
 }
+
