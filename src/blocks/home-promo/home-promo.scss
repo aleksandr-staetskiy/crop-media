@@ -17,7 +17,12 @@
   }
 
   &__info {
-    @include col(xl, 5);
+    @include col(xs, 12, $grid-columns, 15px);
+    @include col(sm, 8, $grid-columns, 10px);
+    @include col(md, 6, $grid-columns, 12px);
+    @include col(lg, 5, $grid-columns, 16px);
+    @include col(xl, 5, $grid-columns);
+    @include col(xxl, 4, $grid-columns, 26px);
     margin-left: auto;
   }
 
@@ -59,7 +64,9 @@
   }
 
   &__content {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     width: 100%;
     height: 100%;
