@@ -27,7 +27,7 @@ block content
                 Vitae qui quia earum mollitia numquam accusantium?
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, numquam.
                 Lorem ipsum dolor, sit amet consectetur adipisicing.
-            button.btn.promo__btn кликни меня
+            button.btn.promo__btn(data-toggle="modal" data-target="#modal-demo-01") кликни меня
 
   section.home-cases
     .home-cases__container
@@ -195,27 +195,27 @@ block content
                 a.case-card__view-more-button(href='#') View More
 
         .home-cases__cell
-            .home-cases__cell
-            section.case-card__wrapper
-              .case-card
-                header.case-card__header
-                  i.fa.fa-globe.house-card-heading-icon
-                  h2.case-card__heading logo
-                .case-card__status
-                  p.case-card__overview
-                    | здесь инфа оооооо чем-то
-                    | 115% прибыль
-                    | cash.
-              .case-card__hover-state
-                p.case-card__hover-title watsons
-                header.case-card__hover-header
-                  h2.case-card__heading US
-                p.case-card__hover-description
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, architecto fuga sit incidunt, in
-                  | voluptatem! Itaque suscipit, dignissimos eligendi adipisci magni nobis tempora non sit consequuntur
-                  | quasi. Ut, harum, aut?
-                .case-card__view-more-button-container
-                  a.case-card__view-more-button(href='#') View More
+          .home-cases__cell
+          section.case-card__wrapper
+            .case-card
+              header.case-card__header
+                i.fa.fa-globe.house-card-heading-icon
+                h2.case-card__heading logo
+              .case-card__status
+                p.case-card__overview
+                  | здесь инфа оооооо чем-то
+                  | 115% прибыль
+                  | cash.
+            .case-card__hover-state
+              p.case-card__hover-title watsons
+              header.case-card__hover-header
+                h2.case-card__heading US
+              p.case-card__hover-description
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, architecto fuga sit incidunt, in
+                | voluptatem! Itaque suscipit, dignissimos eligendi adipisci magni nobis tempora non sit consequuntur
+                | quasi. Ut, harum, aut?
+              .case-card__view-more-button-container
+                a.case-card__view-more-button(href='#') View More
 
   section.home-service
     .home-service__container
@@ -225,38 +225,61 @@ block content
           article.info-card
             img(src="img/promo-bg.jpg", alt="alt").info-card__img
             .info-card__body
-              h5.info-card__title
+              h5.info-card__title интернет маркетинг
               .info-card__descr
                 p
-                |lololololololo test some info
-              a.button.info-card__button
+                | Lorem ipsum dolor sit amet consectetur adipisicing.
+                | Lorem ipsum dolor sit amet.
+                | quam deserunt sit numquam porro perspiciatis sint modi, natus consectetur.
+              a.btn.info-card__button далее
 
         .home-service__cell
           article.info-card
             img(src="img/promo-bg.jpg", alt="alt").info-card__img
             .info-card__body
-              h5.info-card__title
+              h5.info-card__title аудить #[br] и аналитика
               .info-card__descr
                 p
                 |lololololololo test some info
-              a.button.info-card__button
+                | quam deserunt sit numquam porro perspiciatis sint modi, natus consectetur.
+              a.btn.info-card__button далее
 
         .home-service__cell
           article.info-card
             img(src="img/promo-bg.jpg", alt="alt").info-card__img
             .info-card__body
-              h5.info-card__title
+              h5.info-card__title брендинг
               .info-card__descr
                 p
                 |lololololololo test some info
-              a.button.info-card__button
+                | Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                | A sequi eum eius quis quas dolorem minus suscipit cumque minima quisquam,
+              a.btn.info-card__button далее
 
+  +modal('modal-demo-01', 'Форма обратной связи', 'some')
+    .modal__body
+      form.general-form(action="")
+        label.general-form__label(for="userName") Имя
+        input.general-form__field(type="text" placeholder="Ваше имя, сэр")
+        span.general-form__help-info Имя юзера. Не менее 3-х символов. Обязательно.
 
+        label.general-form__label(for="userName") номер
+        input.general-form__field(type="text" placeholder="Ваше номер, сэр")
+        span.general-form__help-info Имя юзера. Не менее 3-х символов. Обязательно.
 
+        label.general-form__label(for="userName") мэйл
+        input.general-form__field(type="text" placeholder="Ваше мэйл, сэр")
+        label.general-form__label(for="userName") комментарий
+        textarea.general-form__text-field(type="text" placeholder="Ваше коммент, сэр")
+        button.btn(type="submit") клик-клак
+    .modal__footer
+      button.btn(type='button', data-dismiss='modal') Закрыть
 
+block footer
+  p footer
 
-//- block footer
-//-   p footer
 
 //- block append page-bottom
 //-   script(src='js/some.js')
+
+

@@ -7,12 +7,23 @@
   $block-name:                &; // #{$block-name}__element
 
   & {
+    cursor: pointer;
     position: relative;
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(0,0,0,.125);
+    transition: 0.5s ease;
+
+    &:hover {
+      box-shadow: 0px 1px 22px -1px rgba(135,135,135,1);
+    }
   }
 
-  
+  &__body {
+    padding: 15px;
+  }
 
+  &__button {
+    margin-top: 10px;
+  }
 }

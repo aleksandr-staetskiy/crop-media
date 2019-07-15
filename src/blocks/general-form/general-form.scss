@@ -1,0 +1,47 @@
+// В этом файле должны быть стили для БЭМ-блока general-form, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.general-form {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__label{
+    display: block;
+    color: #383838;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 4px;
+    padding-left: 2px;
+    text-transform: capitalize;
+  }
+
+  &__field {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    min-height: calc(1.5em + 5px + 5px + 2px);
+    margin: 0;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    padding: 7px 12px;
+    line-height: 1.5;
+    font-size: 1em;
+    font-family: inherit;
+    background-color: #fff;
+  }
+
+  &__help-info {
+    font-size: 14px;
+    color: gray;
+  }
+
+  &__text-field {
+    font-size: 16px;
+    width: 100%;
+    min-height: 120px;
+    padding: 10px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+  }
+}
