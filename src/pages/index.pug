@@ -11,7 +11,7 @@ block nav
   +main-nav('10')
 
 block content
-  .home-promo
+  section.home-promo
     .home-promo__video-container
       video.home-promo__background-video(loop='' muted='')
       .home-promo__video-cover
@@ -29,7 +29,7 @@ block content
                 Lorem ipsum dolor, sit amet consectetur adipisicing.
             button.btn.promo__btn кликни меня
 
-  .home-cases
+  section.home-cases
     .home-cases__container
       h2.title.home-cases__general-title Наши кейсы
       .home-cases__grid
@@ -216,6 +216,41 @@ block content
                   | quasi. Ut, harum, aut?
                 .case-card__view-more-button-container
                   a.case-card__view-more-button(href='#') View More
+
+  section.home-service
+    .home-service__container
+      h4.title.home-service__title
+      .home-service__grid
+        .home-service__cell
+          article.info-card
+            img(src="img/promo-bg.jpg", alt="alt").info-card__img
+            .info-card__body
+              h5.info-card__title
+              .info-card__descr
+                p
+                |lololololololo test some info
+              a.button.info-card__button
+
+        .home-service__cell
+          article.info-card
+            img(src="img/promo-bg.jpg", alt="alt").info-card__img
+            .info-card__body
+              h5.info-card__title
+              .info-card__descr
+                p
+                |lololololololo test some info
+              a.button.info-card__button
+
+        .home-service__cell
+          article.info-card
+            img(src="img/promo-bg.jpg", alt="alt").info-card__img
+            .info-card__body
+              h5.info-card__title
+              .info-card__descr
+                p
+                |lololololololo test some info
+              a.button.info-card__button
+
 
 
 
