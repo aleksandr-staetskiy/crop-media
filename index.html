@@ -57,7 +57,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
           </nav>
         </div>
       </header>
-      <div class="home-promo">
+      <section class="home-promo">
         <div class="home-promo__video-container"><video class="home-promo__background-video" loop="" muted=""></video>
           <div class="home-promo__video-cover"></div>
           <div class="home-promo__overlay"></div>
@@ -74,13 +74,13 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                     <Lorem>ipsum dolor sit amet consectetur adipisicing elit. Unde, numquam.</Lorem>
                     <Lorem>ipsum dolor, sit amet consectetur adipisicing.</Lorem>
                   </p>
-                </div><button class="btn promo__btn">кликни меня</button>
+                </div><button class="btn promo__btn" data-toggle="modal" data-target="#modal-demo-01">кликни меня</button>
               </div>
             </div>
           </div>
         </section>
-      </div>
-      <div class="home-cases">
+      </section>
+      <section class="home-cases">
         <div class="home-cases__container">
           <h2 class="title home-cases__general-title">Наши кейсы</h2>
           <div class="home-cases__grid">
@@ -285,13 +285,67 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
             </div>
           </div>
         </div>
+      </section>
+      <section class="home-service">
+        <div class="home-service__container">
+          <h4 class="title home-service__title"></h4>
+          <div class="home-service__grid">
+            <div class="home-service__cell">
+              <article class="info-card"><img class="info-card__img" src="img/promo-bg.jpg" alt="alt">
+                <div class="info-card__body">
+                  <h5 class="info-card__title">интернет маркетинг</h5>
+                  <div class="info-card__descr">
+                    <p></p>Lorem ipsum dolor sit amet consectetur adipisicing.
+                    Lorem ipsum dolor sit amet.
+                    quam deserunt sit numquam porro perspiciatis sint modi, natus consectetur.
+                  </div><a class="btn info-card__button">далее</a>
+                </div>
+              </article>
+            </div>
+            <div class="home-service__cell">
+              <article class="info-card"><img class="info-card__img" src="img/promo-bg.jpg" alt="alt">
+                <div class="info-card__body">
+                  <h5 class="info-card__title">аудить <br> и аналитика</h5>
+                    <div class="info-card__descr">
+                      <p></p>lololololololo test some info
+                      quam deserunt sit numquam porro perspiciatis sint modi, natus consectetur.
+                    </div><a class="btn info-card__button">далее</a>
+                </div>
+              </article>
+            </div>
+            <div class="home-service__cell">
+              <article class="info-card"><img class="info-card__img" src="img/promo-bg.jpg" alt="alt">
+                <div class="info-card__body">
+                  <h5 class="info-card__title">брендинг</h5>
+                  <div class="info-card__descr">
+                    <p></p>lololololololo test some info
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    A sequi eum eius quis quas dolorem minus suscipit cumque minima quisquam,
+                  </div><a class="btn info-card__button">далее</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="modal  modal--some" id="modal-demo-01" tabindex="-1" role="dialog">
+        <div class="modal__dialog" role="document">
+          <div class="modal__content">
+            <div class="modal__header"><span class="close modal__close" data-dismiss="modal" aria-label="Закрыть"><span></span></span>
+              <h4 class="modal__title">Форма обратной связи</h4>
+            </div>
+            <div class="modal__body">
+              <form class="general-form" action=""><label class="general-form__label" for="userName">Имя</label><input class="general-form__field" type="text" placeholder="Ваше имя, сэр"><span class="general-form__help-info">Имя юзера. Не менее 3-х символов. Обязательно.</span><label class="general-form__label" for="userName">номер</label><input class="general-form__field" type="text" placeholder="Ваше номер, сэр"><span class="general-form__help-info">Имя юзера. Не менее 3-х символов. Обязательно.</span><label class="general-form__label" for="userName">мэйл</label><input class="general-form__field" type="text" placeholder="Ваше мэйл, сэр"><label class="general-form__label" for="userName">комментарий</label><textarea class="general-form__text-field" type="text" placeholder="Ваше коммент, сэр"></textarea><button class="btn" type="submit">клик-клак</button></form>
+            </div>
+            <div class="modal__footer"><button class="btn" type="button" data-dismiss="modal">Закрыть</button></div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="page__footer-wrapper">
       <footer class="page-footer" role="contentinfo">
         <div class="page-footer__inner">
-          <p>«Подвал»</p>
-          <p>Контактный телефон: <a href="tel:+70000000000">+7 000 000 00 00</a></p>
+          <p>footer</p>
         </div>
       </footer>
     </div>
