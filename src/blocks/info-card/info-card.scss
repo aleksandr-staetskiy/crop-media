@@ -6,21 +6,47 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  &__arrow {
+    display: block;
+    margin-left: auto;
+    right: 5%;
+    bottom: 5%;
+    width: 40px;
+    height: 20px;
+    fill: #bc0054;
+    transition: 0.7s ease;
+  }
+
   & {
     cursor: pointer;
     position: relative;
     display: flex;
     flex-direction: column;
-    border: 1px solid rgba(0,0,0,.125);
-    transition: 0.5s ease;
+    // transition: 0.7s ease;
 
-    &:hover {
-      box-shadow: 0px 1px 22px -1px rgba(135,135,135,1);
+    &:hover .info-card__body {
+      transform: translateY(-15%);
+      background: #bc0054;
     }
+
+    &:hover .info-card__body .info-card__title{
+      color: #fff;
+    }
+
+    &:hover .info-card__arrow {
+      fill: #fff;
+    }
+
+    /* &:hover {
+      box-shadow: 0px 1px 22px -1px rgba(135,135,135,1);
+    } */
   }
 
   &__body {
-    padding: 15px;
+    height: 110px;
+    padding: 20px 15px;
+    background: $gray-light;
+    transition: 0.7s ease;
   }
 
   &__button {
