@@ -20,14 +20,18 @@ block content
       .home-promo__container
         .home-promo__grid
           .home-promo__info
-            h1.home-promo__title тут вся реклама
-            .promo__descr
-              p|
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Vitae qui quia earum mollitia numquam accusantium?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, numquam.
-                Lorem ipsum dolor, sit amet consectetur adipisicing.
-            button.btn.promo__btn(data-toggle="modal" data-target="#modal-demo-01") кликни меня
+            h1.home-promo__title
+              | тут
+              span.home-promo__title--red вся
+              br
+              | реклама
+            .home-promo__descr
+              p
+              |CROP media — эффективное интернет агентство.
+              |Мы специализируемся на разработке и реализации комплексных
+              |стратегий привлечения клиентов из интернета.
+
+            button.btn.home-promo__btn(data-toggle="modal" data-target="#modal-demo-01") кликни меня
 
   section.home-cases
     .home-cases__container
@@ -50,7 +54,6 @@ block content
                 a.case-card__view-more-button(href='#') читать
 
         .home-cases__cell
-          .home-cases__cell
           section.case-card__wrapper
             .case-card
             .case-card__hover-state.case-card__hover-state--off.case-card__hover-state--watsons
@@ -66,7 +69,6 @@ block content
                 a.case-card__view-more-button(href='#') читать
 
         .home-cases__cell
-          .home-cases__cell
           section.case-card__wrapper
             .case-card
               img.case-card__logo(src="img/logo-farneo.svg", alt="farnego")
@@ -83,7 +85,6 @@ block content
                 a.case-card__view-more-button(href='#') читать
 
         .home-cases__cell
-          .home-cases__cell
           section.case-card__wrapper
             .case-card
               img.case-card__logo(src="img/logo-yolkki.svg", alt="yolkki")
@@ -100,7 +101,6 @@ block content
                 a.case-card__view-more-button(href='#') читать
 
         .home-cases__cell
-          .home-cases__cell
           section.case-card__wrapper
             .case-card
               img.case-card__logo(src="img/logo-watsons.svg", alt="watsons")
@@ -117,7 +117,6 @@ block content
                 a.case-card__view-more-button(href='#') читать
 
         .home-cases__cell
-          .home-cases__cell
           section.case-card__wrapper
             .case-card
               img.case-card__logo(src="img/logo-watsons.svg", alt="sport mix")
@@ -134,7 +133,6 @@ block content
                 a.case-card__view-more-button(href='#') читать
 
         .home-cases__cell
-          .home-cases__cell
           section.case-card__wrapper
             .case-card
               img.case-card__logo(src="img/logo-watsons.svg", alt="sport mix")
@@ -151,7 +149,6 @@ block content
                 a.case-card__view-more-button(href='#') читать
 
         .home-cases__cell
-          .home-cases__cell
           section.case-card__wrapper
             .case-card
               img.case-card__logo(src="img/logo-ryadi.svg", alt="sport mix")
@@ -245,6 +242,74 @@ block content
               a.info-card__link(href="")
                 svg.info-card__arrow(id='Слой_1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 98.78 39.34')
                   path.st0(d='M0 15.68v7.87h19.4l-7.88-7.87zM80.89 0L69.94.19l14.87 15.49H21.17l7.87 7.87h55.77L69.94 39.04l10.83.3 18.01-19.73z')
+
+  section.performance-marketing
+    .performance-marketing__container
+      h5.performance-marketing__title performance marketing
+      .performance-marketing__grid
+        .performance-marketing__cell
+          section.case-card__wrapper
+            .case-card
+              img.case-card__logo(src="img/logo-bs.svg", alt="bely sad")
+            .case-card__hover-state.case-card__hover-state--watsons
+              header.case-card__hover-header
+                h2.case-card__heading watsons
+              p.case-card__hover-title косметика и товары для дома
+              p.case-card__hover-description
+                |плюс
+                span.case-card__hover-description--red  200%
+                 br
+                | к продажам
+              .case-card__view-more-button-container
+                a.case-card__view-more-button(href='#') читать
+
+        .performance-marketing__cell
+          section.case-card__wrapper
+            .case-card
+            .case-card__hover-state.case-card__hover-state--off.case-card__hover-state--watsons
+              header.case-card__hover-header
+                h2.case-card__heading watsons
+              p.case-card__hover-title косметика и товары для дома
+              p.case-card__hover-description
+                  |плюс
+                  span.case-card__hover-description--red  200%
+                   br
+                  | к продажам
+              .case-card__view-more-button-container
+                a.case-card__view-more-button(href='#') читать
+
+        .performance-marketing__cell
+          section.case-card__wrapper
+            .case-card
+              img.case-card__logo(src="img/logo-farneo.svg", alt="farnego")
+            .case-card__hover-state.case-card__hover-state--watsons
+              header.case-card__hover-header
+                h2.case-card__heading watsons
+              p.case-card__hover-title косметика и товары для дома
+              p.case-card__hover-description
+                  |плюс
+                  span.case-card__hover-description--red  200%
+                   br
+                  | к продажам
+              .case-card__view-more-button-container
+                a.case-card__view-more-button(href='#') читать
+
+        .performance-marketing__cell
+          section.case-card__wrapper
+            .case-card
+              img.case-card__logo(src="img/logo-yolkki.svg", alt="yolkki")
+            .case-card__hover-state.case-card__hover-state--watsons
+              header.case-card__hover-header
+                h2.case-card__heading watsons
+              p.case-card__hover-title косметика и товары для дома
+              p.case-card__hover-description
+                |плюс
+                span.case-card__hover-description--red  200%
+                 br
+                | к продажам
+              .case-card__view-more-button-container
+                a.case-card__view-more-button(href='#') читать
+
 
   +modal('modal-demo-01', 'Форма обратной связи', 'some')
     .modal__body
