@@ -77,6 +77,7 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.3.0",
     "autosize": "^4.0.2",
     "baron": "^3.0.3",
     "choices.js": "^7.0.0",

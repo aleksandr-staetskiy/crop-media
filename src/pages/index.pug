@@ -206,109 +206,121 @@ block content
   section.home-industry
     .home-industry__container
       h4.title.home-industry__title отраслевые решения
-      .home-industry__grid
-        .home-industry__cell
-          article.info-card
-            img(src="img/info-card-1.jpg", alt="alt").info-card__img
-            .info-card__body
-              h5.info-card__title интернет маркетинг
-              a.info-card__link(href="")
-                svg.info-card__arrow(id='Слой_1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 98.78 39.34')
-                  path.st0(d='M0 15.68v7.87h19.4l-7.88-7.87zM80.89 0L69.94.19l14.87 15.49H21.17l7.87 7.87h55.77L69.94 39.04l10.83.3 18.01-19.73z')
 
-        .home-industry__cell
-          article.info-card
-            img(src="img/info-card-2.jpg", alt="alt").info-card__img
-            .info-card__body
-              h5.info-card__title интернет маркетинг
-              a.info-card__link(href="")
-                svg.info-card__arrow(id='Слой_1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 98.78 39.34')
-                  path.st0(d='M0 15.68v7.87h19.4l-7.88-7.87zM80.89 0L69.94.19l14.87 15.49H21.17l7.87 7.87h55.77L69.94 39.04l10.83.3 18.01-19.73z')
+      .glide#home-industry-slider
+        .glide__track(data-glide-el='track')
+          ul.glide__slides
+            li.glide__slide
+              article.info-card
+                img(src="img/info-card-1.jpg", alt="alt").info-card__img
+                .info-card__body
+                  h5.info-card__title интернет маркетинг
+                  a.info-card__link(href="")
+                    svg.info-card__arrow(id='Слой_1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 98.78 39.34')
+                      path.st0(d='M0 15.68v7.87h19.4l-7.88-7.87zM80.89 0L69.94.19l14.87 15.49H21.17l7.87 7.87h55.77L69.94 39.04l10.83.3 18.01-19.73z')
 
-        .home-industry__cell
-          article.info-card
-            img(src="img/info-card-3.jpg", alt="alt").info-card__img
-            .info-card__body
-              h5.info-card__title интернет маркетинг
-              a.info-card__link(href="")
-                svg.info-card__arrow(id='Слой_1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 98.78 39.34')
-                  path.st0(d='M0 15.68v7.87h19.4l-7.88-7.87zM80.89 0L69.94.19l14.87 15.49H21.17l7.87 7.87h55.77L69.94 39.04l10.83.3 18.01-19.73z')
+            li.glide__slide
+              article.info-card
+                img(src="img/info-card-2.jpg", alt="alt").info-card__img
+                .info-card__body
+                  h5.info-card__title интернет маркетинг
+                  a.info-card__link(href="")
+                    svg.info-card__arrow(id='Слой_1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 98.78 39.34')
+                      path.st0(d='M0 15.68v7.87h19.4l-7.88-7.87zM80.89 0L69.94.19l14.87 15.49H21.17l7.87 7.87h55.77L69.94 39.04l10.83.3 18.01-19.73z')
 
-        .home-industry__cell
-          article.info-card
-            img(src="img/info-card-4.jpg", alt="alt").info-card__img
-            .info-card__body
-              h5.info-card__title интернет маркетинг
-              a.info-card__link(href="")
-                svg.info-card__arrow(id='Слой_1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 98.78 39.34')
-                  path.st0(d='M0 15.68v7.87h19.4l-7.88-7.87zM80.89 0L69.94.19l14.87 15.49H21.17l7.87 7.87h55.77L69.94 39.04l10.83.3 18.01-19.73z')
+            li.glide__slide
+              article.info-card
+                img(src="img/info-card-3.jpg", alt="alt").info-card__img
+                .info-card__body
+                  h5.info-card__title интернет маркетинг
+                  a.info-card__link(href="")
+                    svg.info-card__arrow(id='Слой_1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 98.78 39.34')
+                    path.st0(d='M0 15.68v7.87h19.4l-7.88-7.87zM80.89 0L69.94.19l14.87 15.49H21.17l7.87 7.87h55.77L69.94 39.04l10.83.3 18.01-19.73z')
 
+            li.glide__slide
+              article.info-card
+                img(src="img/info-card-4.jpg", alt="alt").info-card__img
+                .info-card__body
+                  h5.info-card__title интернет маркетинг
+                  a.info-card__link(href="")
+                    svg.info-card__arrow(id='Слой_1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 98.78 39.34')
+                      path.st0(d='M0 15.68v7.87h19.4l-7.88-7.87zM80.89 0L69.94.19l14.87 15.49H21.17l7.87 7.87h55.77L69.94 39.04l10.83.3 18.01-19.73z')
+
+   
   section.performance-marketing
     .performance-marketing__container
       h5.performance-marketing__title performance marketing
-      .performance-marketing__grid
-        .performance-marketing__cell
-          section.case-card__wrapper
-            .case-card
-              img.case-card__logo(src="img/logo-bs.svg", alt="bely sad")
-            .case-card__hover-state.case-card__hover-state--watsons
-              header.case-card__hover-header
-                h2.case-card__heading watsons
-              p.case-card__hover-title косметика и товары для дома
-              p.case-card__hover-description
-                |плюс
-                span.case-card__hover-description--red  200%
-                 br
-                | к продажам
-              .case-card__view-more-button-container
-                a.case-card__view-more-button(href='#') читать
+      .glide#performance-marketing-slider
+        .glide__track(data-glide-el='track')
+          ul.glide__slides
+            li.glide__slide
+              section.case-card__wrapper
+                .case-card
+                  img.case-card__logo(src="img/logo-bs.svg", alt="bely sad")
+                .case-card__hover-state.case-card__hover-state--watsons
+                  header.case-card__hover-header
+                    h2.case-card__heading watsons
+                  p.case-card__hover-title косметика и товары для дома
+                  p.case-card__hover-description
+                    |плюс
+                    span.case-card__hover-description--red  200%
+                     br
+                    | к продажам
+                  .case-card__view-more-button-container
+                    a.case-card__view-more-button(href='#') читать
 
-        .performance-marketing__cell
-          section.case-card__wrapper
-            .case-card
-            .case-card__hover-state.case-card__hover-state--off.case-card__hover-state--watsons
-              header.case-card__hover-header
-                h2.case-card__heading watsons
-              p.case-card__hover-title косметика и товары для дома
-              p.case-card__hover-description
-                  |плюс
-                  span.case-card__hover-description--red  200%
-                   br
-                  | к продажам
-              .case-card__view-more-button-container
-                a.case-card__view-more-button(href='#') читать
+            li.glide__slide
+              section.case-card__wrapper
+                .case-card
+                .case-card__hover-state.case-card__hover-state--off.case-card__hover-state--watsons
+                  header.case-card__hover-header
+                    h2.case-card__heading watsons
+                  p.case-card__hover-title косметика и товары для дома
+                  p.case-card__hover-description
+                      |плюс
+                      span.case-card__hover-description--red  200%
+                       br
+                      | к продажам
+                  .case-card__view-more-button-container
+                    a.case-card__view-more-button(href='#') читать
 
-        .performance-marketing__cell
-          section.case-card__wrapper
-            .case-card
-              img.case-card__logo(src="img/logo-farneo.svg", alt="farnego")
-            .case-card__hover-state.case-card__hover-state--watsons
-              header.case-card__hover-header
-                h2.case-card__heading watsons
-              p.case-card__hover-title косметика и товары для дома
-              p.case-card__hover-description
-                  |плюс
-                  span.case-card__hover-description--red  200%
-                   br
-                  | к продажам
-              .case-card__view-more-button-container
-                a.case-card__view-more-button(href='#') читать
+            li.glide__slide
+              section.case-card__wrapper
+                .case-card
+                  img.case-card__logo(src="img/logo-farneo.svg", alt="farnego")
+                .case-card__hover-state.case-card__hover-state--watsons
+                  header.case-card__hover-header
+                    h2.case-card__heading watsons
+                  p.case-card__hover-title косметика и товары для дома
+                  p.case-card__hover-description
+                      |плюс
+                      span.case-card__hover-description--red  200%
+                       br
+                      | к продажам
+                  .case-card__view-more-button-container
+                    a.case-card__view-more-button(href='#') читать
 
-        .performance-marketing__cell
-          section.case-card__wrapper
-            .case-card
-              img.case-card__logo(src="img/logo-yolkki.svg", alt="yolkki")
-            .case-card__hover-state.case-card__hover-state--watsons
-              header.case-card__hover-header
-                h2.case-card__heading watsons
-              p.case-card__hover-title косметика и товары для дома
-              p.case-card__hover-description
-                |плюс
-                span.case-card__hover-description--red  200%
-                 br
-                | к продажам
-              .case-card__view-more-button-container
-                a.case-card__view-more-button(href='#') читать
+            li.glide__slide
+              section.case-card__wrapper
+                .case-card
+                  img.case-card__logo(src="img/logo-farneo.svg", alt="farnego")
+                .case-card__hover-state.case-card__hover-state--watsons
+                  header.case-card__hover-header
+                    h2.case-card__heading watsons
+                  p.case-card__hover-title косметика и товары для дома
+                  p.case-card__hover-description
+                      |плюс
+                      span.case-card__hover-description--red  200%
+                       br
+                      | к продажам
+                  .case-card__view-more-button-container
+                    a.case-card__view-more-button(href='#') читать
+
+
+
+
+
+
 
 
   +modal('modal-demo-01', 'Форма обратной связи', 'some')
