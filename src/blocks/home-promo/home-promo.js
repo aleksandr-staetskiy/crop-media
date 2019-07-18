@@ -203,15 +203,15 @@
     // Array of objects containing the src and type
     // of different video formats to add
     src: [
-      // {
-      //   src: 'video/test.mp4',
-      //   type: 'video/mp4'
-      // },
-
       {
-        src: 'https://vjs.zencdn.net/v/oceans.webm',
-        type: 'video/webm;codecs="vp8, vorbis"'
-      }
+        src: 'video/test.mp4',
+        type: 'video/mp4'
+      },
+
+      // {
+      //   src: 'https://vjs.zencdn.net/v/oceans.webm',
+      //   type: 'video/webm;codecs="vp8, vorbis"'
+      // }
     ],
 
     // What to do once video loads (initial frame)

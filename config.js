@@ -7,6 +7,11 @@ let config = {
   'ignoredBlocks': [
     'no-js',
   ],
+  "addAssets": {
+    "./src/fonts/fira-sans.woff": "fonts/",
+    "./src/fonts/fira-sans-medium.woff": "fonts/",
+    "./src/fonts/fira-sans-bold.woff": "fonts/",
+  },
   'alwaysAddBlocks': [
     // 'sprite-svg',
     // 'sprite-png',
