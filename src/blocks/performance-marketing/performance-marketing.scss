@@ -24,9 +24,16 @@
   }
 
   &__title {
-    font-size: 38px;
+    font-size: 2.375rem;
     margin-left: 17%;
     margin-bottom: 30px;
     margin-top: 55px;
+  }
+
+  @media (max-width: $screen-sm) {
+
+    &__title {
+      font-size: 1.55rem;
+    }
   }
 }

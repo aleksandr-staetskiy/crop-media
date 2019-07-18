@@ -29,4 +29,11 @@
     margin-top: 55px;
   }
 
+  @media (max-width: $screen-sm) {
+
+    &__title {
+      font-size: 1.55rem;
+    }
+  }
+
 }

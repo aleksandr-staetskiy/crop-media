@@ -339,3 +339,19 @@ pre {
   @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
   @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
+
+.glide__bullets {
+  bottom: 0.75em;
+
+  &--no-bottom-indent {
+    bottom: 0em;
+  }
+}
+
+.glide__bullet {
+  background-color: rgba(153, 153, 153, 0.698);
+
+  &--active {
+    background-color: $rubin;
+  }
+}

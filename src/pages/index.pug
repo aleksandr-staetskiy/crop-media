@@ -205,7 +205,7 @@ block content
 
   section.home-industry
     .home-industry__container
-      h4.title.home-industry__title отраслевые решения
+      h4.title.home-industry__title Отраслевые решения
 
       .glide#home-industry-slider
         .glide__track(data-glide-el='track')
@@ -246,10 +246,15 @@ block content
                     svg.info-card__arrow(id='Слой_1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 98.78 39.34')
                       path.st0(d='M0 15.68v7.87h19.4l-7.88-7.87zM80.89 0L69.94.19l14.87 15.49H21.17l7.87 7.87h55.77L69.94 39.04l10.83.3 18.01-19.73z')
 
-   
+        .glide__bullets.glide__bullets--no-bottom-indent(data-glide-el='controls[nav]')
+          button.glide__bullet(data-glide-dir='=0')
+          button.glide__bullet(data-glide-dir='=1')
+          button.glide__bullet(data-glide-dir='=2')
+          button.glide__bullet(data-glide-dir='=3')
+
   section.performance-marketing
     .performance-marketing__container
-      h5.performance-marketing__title performance marketing
+      h5.performance-marketing__title Performance marketing
       .glide#performance-marketing-slider
         .glide__track(data-glide-el='track')
           ul.glide__slides
@@ -315,6 +320,13 @@ block content
                       | к продажам
                   .case-card__view-more-button-container
                     a.case-card__view-more-button(href='#') читать
+
+        .glide__bullets(data-glide-el='controls[nav]')
+          button.glide__bullet(data-glide-dir='=0')
+          button.glide__bullet(data-glide-dir='=1')
+          button.glide__bullet(data-glide-dir='=2')
+          button.glide__bullet(data-glide-dir='=3')
+
 
 
 
