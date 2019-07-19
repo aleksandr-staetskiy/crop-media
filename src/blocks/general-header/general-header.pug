@@ -1,0 +1,27 @@
+//- Все примеси в этом файле должны начинаться c имени блока (general-header)
+
+mixin general-header(text, mods)
+
+  //- Принимает:
+  //-   text    {string} - текст
+  //-   mods    {string} - список модификаторов
+  //- Вызов:
+        +general-header('Текст', 'some-mod')
+
+  -
+    // список модификаторов
+    var allMods = '';
+    if(typeof(mods) !== 'undefined' && mods) {
+      var modsList = mods.split(',');
+      for (var i = 0; i < modsList.length; i++) {
+        allMods = allMods + ' general-header--' + modsList[i].trim();
+      }
+    }
+
+  .general-header(class=allMods)&attributes(attributes)
+    .general-header__inner
+      a.general-header__logo-wrap(href="")
+        img.general-header__logo(src="", alt="")
+        
+
+
