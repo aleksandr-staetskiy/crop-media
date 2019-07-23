@@ -13,7 +13,6 @@
     bottom: 5%;
     width: 40px;
     height: 20px;
-    fill: #bc0054;
     transition: 0.7s ease;
   }
 
@@ -33,13 +32,10 @@
       color: #fff;
     }
 
-    &:hover .info-card__arrow {
-      fill: #fff;
+    &:hover .info-card__arrow path {
+      fill: #fff!important;
     }
 
-    /* &:hover {
-      box-shadow: 0px 1px 22px -1px rgba(135,135,135,1);
-    } */
   }
 
   &__body {

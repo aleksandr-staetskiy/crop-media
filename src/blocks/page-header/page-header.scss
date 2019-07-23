@@ -3,6 +3,11 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .page-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
 
   &__inner {
     @include container();

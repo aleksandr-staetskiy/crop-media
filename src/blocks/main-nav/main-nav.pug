@@ -15,62 +15,68 @@ mixin main-nav(selectedID)
     +burger('Показать главное меню', 'nav', 'main-nav--open')(class='main-nav__toggler')
     ul.main-nav__list
       li.main-nav__item.main-nav__item--about
-        a.main-nav__link(href="") О компании
+        a.main-nav__link.main-nav__link-pseudo(href="") О компании
         ul.main-nav__list-hidden.main-nav__list-hidden--about
           li.main-nav__item-hidden
-            a.main-nav__link-hidden(href="") fvevr
+            a.main-nav__link-hidden(href="") Команда
           li.main-nav__item-hidden
-            a.main-nav__link-hidden(href="") fvevr
+            a.main-nav__link-hidden(href="") История
           li.main-nav__item-hidden
-            a.main-nav__link-hidden(href="") fvevr
+            a.main-nav__link-hidden(href="") Награды
           li.main-nav__item-hidden
-            a.main-nav__link-hidden(href="") fvevr
+            a.main-nav__link-hidden(href="") Вакансии
           li.main-nav__item-hidden
-            a.main-nav__link-hidden(href="") fvevr
+            a.main-nav__link-hidden(href="") Наша жизнь
           li.main-nav__item-hidden
-            a.main-nav__link-hidden(href="") fvevr
+            a.main-nav__link-hidden(href="") Наши клиенты
           li.main-nav__item-hidden
-            a.main-nav__link-hidden(href="") fvevr
-
-      li.main-nav__item.main-nav__item--services
-        a.main-nav__link(href="") Услуги
-        ul.main-nav__list-hidden.main-nav__list-hidden--services
-          li.main-nav__item-hidden
-            a.main-nav__link-hidden(href="") lo
-          li.main-nav__item-hidden
-            a.main-nav__link-hidden(href="") vooo
-          li.main-nav__item-hidden
-            a.main-nav__link-hidden(href="") brrra
-          li.main-nav__item-hidden
-            a.main-nav__link-hidden(href="") fvevr
-          li.main-nav__item-hidden
-            a.main-nav__link-hidden(href="") fvevr
-          li.main-nav__item-hidden
-            a.main-nav__link-hidden(href="") fvevr
-          li.main-nav__item-hidden
-            a.main-nav__link-hidden(href="") fvevr
+            a.main-nav__link-hidden(href="") Отзывы
 
       li.main-nav__item.main-nav__item--cases
-        a.main-nav__link(href="") Кейсы
-        ul.main-nav__list-hidden.main-nav__list-hidden--cases
-          li.main-nav__item-hidden
-            a.main-nav__link-hidden(href="") bar
-          li.main-nav__item-hidden
-            a.main-nav__link-hidden(href="") foo
-          li.main-nav__item-hidden
-            a.main-nav__link-hidden(href="") brrra
-          li.main-nav__item-hidden
-            a.main-nav__link-hidden(href="") fvevr
-          li.main-nav__item-hidden
-            a.main-nav__link-hidden(href="") fvevr
-          li.main-nav__item-hidden
-            a.main-nav__link-hidden(href="") fvevr
-          li.main-nav__item-hidden
-            a.main-nav__link-hidden(href="") fvevr
+        a.main-nav__link.main-nav__link-pseudo(href="") Услуги
+        .main-nav__list-hidden.main-nav__list-hidden--cases
+          ul
+            li.main-nav__item-hidden
+              a.main-nav__link-hidden(href="") Интернет-маркетинг
+            li.main-nav__item-hidden
+              a.main-nav__link-hidden(href="") Стратегия
+            li.main-nav__item-hidden
+              a.main-nav__link-hidden(href="") Контекстная реклама
+            li.main-nav__item-hidden
+              a.main-nav__link-hidden(href="") SMM
+            li.main-nav__item-hidden
+              a.main-nav__link-hidden(href="") SEO
+            li.main-nav__item-hidden
+              a.main-nav__link-hidden(href="") SERM
+          ul
+            li.main-nav__item-hidden
+              a.main-nav__link-hidden(href="") Аудит и аналитика
+            li.main-nav__item-hidden
+              a.main-nav__link-hidden(href="") Настройка веб-аналитики
+            li.main-nav__item-hidden
+              a.main-nav__link-hidden(href="") Сквозная аналитика
+          ul
+            li.main-nav__item-hidden
+              a.main-nav__link-hidden(href="") Брендинг
+            li.main-nav__item-hidden
+              a.main-nav__link-hidden(href="") Нейминг
+            li.main-nav__item-hidden
+              a.main-nav__link-hidden(href="") Фирменный стиль
+            li.main-nav__item-hidden
+              a.main-nav__link-hidden(href="") Логотип
+            li.main-nav__item-hidden
+              a.main-nav__link-hidden(href="") Сувенирная продукция
 
       li.main-nav__item
         a.main-nav__link(href="") Контакты
       li.main-nav__item
         a.main-nav__link(href="") Блог
-      li.main-nav__item
-        a.main-nav__link(href="") На связи
+      li.main-nav__item.main-nav__item--services
+        a.main-nav__link.main-nav__link-pseudo(href="") На связи
+        ul.main-nav__list-hidden.main-nav__list-hidden--services
+          li.main-nav__item-hidden
+            a.main-nav__link-hidden(href="") Вконтакте
+          li.main-nav__item-hidden
+            a.main-nav__link-hidden(href="") Instagram
+          li.main-nav__item-hidden
+            a.main-nav__link-hidden(href="") Почта

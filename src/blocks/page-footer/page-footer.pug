@@ -1,12 +1,12 @@
-//- Все примеси в этом файле должны начинаться c имени блока (page-footer)
+r//- Все примеси в этом файле должны начинаться c имени блока (page-footer)
 
 mixin page-footer(mods)
 
   //- Принимает:
   //-   mods  {string} - список модификаторов
   //- Вызов:
-        +page-footer()
-          p «Подвал»
+    +page-footer()
+      p «Подвал»
   -
     // список модификаторов
     var allMods = '';
@@ -19,4 +19,79 @@ mixin page-footer(mods)
 
   footer.page-footer(class=allMods, role='contentinfo')&attributes(attributes)
     .page-footer__inner
-      block
+      .page-footer__container
+        .page-footer__grid
+          .page-footer__cell-2
+            span.page-footer__heading О компании
+            ul.page-footer__list
+              li.page-footer__item
+                a.page-footer__link(href="") Команда
+              li.page-footer__item
+                a.page-footer__link(href="") История
+              li.page-footer__item
+                a.page-footer__link(href="") Награды
+              li.page-footer__item
+                a.page-footer__link(href="") Вакансии
+              li.page-footer__item
+                a.page-footer__link(href="") Наша жизнь
+              li.page-footer__item
+                a.page-footer__link(href="") Отзывы
+          .page-footer__cell-2
+            span.page-footer__heading Услуги
+            ul.page-footer__list
+              li.page-footer__item.page-footer__item--heading
+                a.page-footer__link.footer__link-heading(href="") Интернет-маркетинг
+              li.page-footer__item
+                a.page-footer__link(href="") Стратегия
+              li.page-footer__item
+                a.page-footer__link(href="") Контекстная реклама
+              li.page-footer__item
+                a.page-footer__link(href="") Реклама в сс
+              li.page-footer__item
+                a.page-footer__link(href="") SMM
+              li.page-footer__item
+                a.page-footer__link(href="") SEO
+              li.page-footer__item
+                a.page-footer__link(href="") SERM
+          .page-footer__cell-2
+            ul.page-footer__list
+              li.page-footer__item.page-footer__item--heading
+                a.page-footer__link.footer__link-heading(href="") Аудит и аналитика
+              li.page-footer__item
+                a.page-footer__link(href="") Настройка веб-аналитики
+              li.page-footer__item
+                a.page-footer__link(href="") Usability аудит сайта
+              li.page-footer__item
+                a.page-footer__link(href="") Сквозная аналитика
+          .page-footer__cell-2
+            ul.page-footer__list
+              li.page-footer__item.page-footer__item--heading
+                a.page-footer__link.footer__link-heading(href="") Брендинг
+              li.page-footer__item
+                a.page-footer__link(href="") Нейминг
+              li.page-footer__item
+                a.page-footer__link(href="") Фирменный стиль
+              li.page-footer__item
+                a.page-footer__link(href="") Логотип
+              li.page-.footer__item
+                a.page-footer__link(href="") Сувенирная продукция
+          .page-footer__cell-2
+             ul.page-footer__list
+              li.page-footer__item.page-footer__item--heading
+                a.page-footer__link.footer__link-heading(href="") Perfomance-маркетинг
+          .page-footer__cell-2
+            ul.page-footer__list
+              li.page-footer__item.page-footer__item--heading
+                a.page-footer__link.footer__link-heading(href="") Маркетинг продаж
+          .page-footer__cell-2
+            span.page-footer__heading Кейсы
+          .page-footer__cell-2
+            span.page-footer__heading Контакты
+          .page-footer__cell-2
+            span.page-footer__heading Блог
+
+
+
+
+
+

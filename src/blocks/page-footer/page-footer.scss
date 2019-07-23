@@ -2,4 +2,60 @@
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-.page-footer {}
+.page-footer {
+  background-color: $brown;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  &__container {
+    font-size: 14px;
+    @include container();
+  }
+
+  &__grid {
+    @include row();
+  }
+
+  &__cell-2 {
+    @include col(lg, 2, $grid-columns, 16px);
+    @include col(xl, 2, $grid-columns, 20px);
+}
+
+  &__cell-10 {
+    @include col(lg, 10, $grid-columns, 16px);
+    @include col(xl, 8, $grid-columns, 20px);
+  }
+
+  &__uslugi-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    display: block;
+    color: $rubin;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: -21px;
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 35px;
+  }
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    &:hover {
+      color: $rubin;
+    }
+  }
+
+  &__item  {
+    &--heading {
+      text-decoration: underline;
+      padding-bottom: 7px;
+    }
+  }
+}

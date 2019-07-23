@@ -50,7 +50,7 @@
     flex-direction: column;
     position: relative;
     min-width: 100%;
-    min-height: 100%;
+    height: auto;
     background-color: #fff;
     outline: 0;
   }
@@ -71,7 +71,7 @@
 
   &__close {
     position: absolute !important; // stylelint-disable-line  declaration-no-important
-    top: 5px;
+    top: 20px;
     right: 5px;
   }
 

@@ -9,6 +9,23 @@
   position: relative;
   z-index: 10;
 
+  &__item-hidden {
+    padding: 0;
+    list-style: none;
+  }
+
+  &__list-hidden--cases {
+    padding: 10px!important;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    left: -150px!important;
+
+    & ul {
+      padding: 0;
+    }
+  }
+
   &__item--about:hover .main-nav__list-hidden--about {
     display: block;
   }
@@ -18,7 +35,7 @@
   }
 
   &__item--cases:hover .main-nav__list-hidden--cases {
-    display: block;
+    display: flex;
   }
 
   // первый уровень
@@ -33,9 +50,9 @@
       left: -30px;
       min-width: 170px;
       list-style: none;
-      text-align: center;
-      padding: 0;
-      background: rgba(65, 65, 65, 0.359);
+      text-align: left;
+      padding: 15px;
+      background: rgba(65, 65, 65, 0.701);
       transition: 0.6s ease-in-out;
     }
 
@@ -94,12 +111,27 @@
     display: block;
     padding: 0.5em 1em;
     text-decoration: none;
-    background-color: #fff;
+    color: #fff;
+    font-weight: 700;
+
+    &-pseudo {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 35%;
+        right: -2%;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 6px 0 6px;
+        border-color: $rubin transparent transparent transparent;
+      }
+    }
 
     &:hover,
     &:focus {
       text-decoration: none;
-      background-color: $gray-lightest;
+      color: $rubin;
     }
 
     &--lvl-2 {
@@ -117,6 +149,11 @@
         padding-left: 3em;
       }
     }
+  }
+
+  &__link-hidden {
+    color: #fff;
+    text-decoration: none;
   }
 
   &__sublist-wrapper {
