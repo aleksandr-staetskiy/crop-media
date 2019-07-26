@@ -1,12 +1,8 @@
-// В этом файле должны быть стили для БЭМ-блока title, его элементов,
+// В этом файле должны быть стили для БЭМ-блока vacancy, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-.title {
+.vacancy {
 
   $block-name:                &; // #{$block-name}__element
-
-  font-family: inherit;
-  font-size: $tite-size;
-  font-weight: 700;
 }

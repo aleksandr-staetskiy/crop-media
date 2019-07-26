@@ -1,0 +1,199 @@
+extends ../pug/layout.pug
+
+block meta
+  title О компании
+  meta(name='description', content='')
+
+block nav
+  +main-nav('10')
+
+block content
+  section.about-us-promo
+    .about-us-promo__inner
+      .about-us-promo__wrap
+        h1.about-us-promo__title
+          |Команда
+          br
+          | CROP media
+        img.about-us-promo__img(src="img/crop-team.png", alt="crop media team")
+
+  section.about-us-specialist
+    .about-us-specialist__inner
+      span.title.about-us-specialist__general-title Наши специалисты
+
+      .glide#home-industry-slider
+        .glide__track(data-glide-el='track')
+          ul.glide__slides
+            li.glide__slide
+              article.about-us-specialist__card
+                img(src="img/special-1.png", alt="alt").about-us-specialist__photo
+                h5.about-us-specialist__name Анастасия
+                span.about-us-specialist__position директор чего-нибудь
+                .about-us-specialist__achievement
+                  span.about-us-specialist__achievement-number 36
+                  p.about-us-specialist__achievement-descr успешних проектов
+
+            li.glide__slide
+              article.about-us-specialist__card
+                img(src="img/special-2.png", alt="alt").about-us-specialist__photo
+                h5.about-us-specialist__name Виктория
+                span.about-us-specialist__position лол чего-нибудь
+                .about-us-specialist__achievement
+                  span.about-us-specialist__achievement-number 46
+                  p.about-us-specialist__achievement-descr рекламных проектов
+
+            li.glide__slide
+              article.about-us-specialist__card
+                img(src="img/special-3.png", alt="alt").about-us-specialist__photo
+                h5.about-us-specialist__name Виктория
+                span.about-us-specialist__position лол чего-нибудь
+                .about-us-specialist__achievement
+                  span.about-us-specialist__achievement-number 18
+                  p.about-us-specialist__achievement-descr поисковых оптимизаций
+
+            li.glide__slide
+              article.about-us-specialist__card
+                img(src="img/ special-4.png", alt="alt").about-us-specialist__photo
+                h5.about-us-specialist__name Виктория
+                span.about-us-specialist__position лол чего-нибудь
+                .about-us-specialist__achievement
+                  span.about-us-specialist__achievement-number 25
+                  p.about-us-specialist__achievement-descr поисковых оптимизаций
+
+  section.about-us-news
+    .about-us-news__inner
+      .title.about-us-news__general-title
+        p Новости
+      .about-us-news__grid
+        .about-us-news__cell
+          article.about-us-news__article
+            img.about-us-news__article-img(src="img/news-1.jpg", alt="will generate")
+            .about-us-news__article-info-block
+              .about-us-news__article-text
+                h3.about-us-news__article-title Как мы организовали чего-то там....
+                p Начало текста. Поставить ограничение на ? символов.
+              //- ссыль генерится автоматом на сервере
+              a.about-us-news__article-more(href="#") читать
+
+        .about-us-news__cell
+          article.about-us-news__article
+            img.about-us-news__article-img(src="img/news-2.jpg", alt="will generate")
+            .about-us-news__article-info-block
+              .about-us-news__article-text
+                h3.about-us-news__article-title Как мы организовали чего-то там....
+
+                p Начало текста. Поставить ограничение на ? символов.
+              //- ссыль генерится автоматом на сервере
+              a.about-us-news__article-more(href="#") читать
+
+  section.our-clients
+    .our-clients__inner
+      h4.our-clients__general-title
+      .our-clients__grid
+        .our-clients__item
+          .our-clients__icon-wrap
+            img.our-clients__item-icon
+        .our-clients__item
+          .our-clients__icon-wrap
+            img.our-clients__item-icon
+        .our-clients__item
+          .our-clients__icon-wrap
+            img.our-clients__item-icon
+        .our-clients__item
+          .our-clients__icon-wrap
+            img.our-clients__item-icon
+        .our-clients__item
+          .our-clients__icon-wrap
+            img.our-clients__item-icon
+        .our-clients__item
+          .our-clients__icon-wrap
+            img.our-clients__item-icon
+        .our-clients__item
+          .our-clients__icon-wrap
+            img.our-clients__item-icon
+        .our-clients__item
+          .our-clients__icon-wrap
+            img.our-clients__item-icon
+        .our-clients__item
+          .our-clients__icon-wrap
+            img.our-clients__item-icon
+        .our-clients__item
+          .our-clients__icon-wrap
+            img.our-clients__item-icon
+
+  section.about-us-review
+    .about-us-review__inner
+      h5.about-us-review__title
+      .about-us-review__grid
+        article.about-us-review__item
+          .about-us-review__item-wrap
+            img.about-us-review__item-photo
+            blockquote.about-us-review__item-quote
+              p
+              | «Ни у кого больше не встретили такого комплексного подхода,
+              | ребята начали не с коммерции, а с анализа наших соцсетей,
+              | конкурентов и подробнейшего отчета, и только на основе этих данных и своего опыта сделали очень подробное предложение.
+              | Продумали все мелочи при разработке дизайна, настроили SEO и разработали план дальнейшего продвижения».
+              footer.about-us-review__item-footer
+                p Василий Логвин,
+                p чредитель компании Farneo
+
+        article.about-us-review__item
+          .about-us-review__item-wrap
+            img.about-us-review__item-photo
+            blockquote.about-us-review__item-quote
+              p
+              | «Ни у кого больше не встретили такого комплексного подхода,
+              | ребята начали не с коммерции, а с анализа наших соцсетей,
+              | конкурентов и подробнейшего отчета, и только на основе этих данных и своего опыта сделали очень подробное предложение.
+              | Продумали все мелочи при разработке дизайна, настроили SEO и разработали план дальнейшего продвижения».
+              footer.about-us-review__item-footer
+
+        article.about-us-review__item
+          .about-us-review__item-wrap
+            img.about-us-review__item-photo
+            blockquote.about-us-review__item-quote
+              p
+              | «Ни у кого больше не встретили такого комплексного подхода,
+              | ребята начали не с коммерции, а с анализа наших соцсетей,
+              | конкурентов и подробнейшего отчета, и только на основе этих данных и своего опыта сделали очень подробное предложение.
+              | Продумали все мелочи при разработке дизайна, настроили SEO и разработали план дальнейшего продвижения».
+              footer.about-us-review__item-footer
+
+        article.about-us-review__item
+          .about-us-review__item-wrap
+            img.about-us-review__item-photo
+            blockquote.about-us-review__item-quote
+              p
+              | «Ни у кого больше не встретили такого комплексного подхода,
+              | ребята начали не с коммерции, а с анализа наших соцсетей,
+              | конкурентов и подробнейшего отчета, и только на основе этих данных и своего опыта сделали очень подробное предложение.
+              | Продумали все мелочи при разработке дизайна, настроили SEO и разработали план дальнейшего продвижения».
+              footer.about-us-review__item-footer
+                p Василий Логвин
+
+  section.vacancy
+    .vacancy__inner
+      .vacancy__wrap
+        .vacancy__accordion
+          ul.accordion
+            li.accordion__item backend разработчик
+              .accordion__hidden
+                p
+                | Текст - Кого мы хотим видеть в нашей команде.
+                | Краткое описание вакансии и качеств будущего специалиста.
+            li.accordion__item продажник
+              .accordion__hidden
+                p wow
+            li.accordion__item UI/UX дизайнер
+              .accordion__hidden
+                p awesome
+
+
+
+
+
+
+
+
+
