@@ -1,0 +1,37 @@
+// В этом файле должны быть стили для БЭМ-блока about-us-tabs, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.about-us-tabs {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__panel {
+    display: flex;
+    margin-bottom: 25px;
+
+    &-switcher {
+      cursor: pointer;
+      font-size: 26px;
+     font-weight: bold;
+      margin-left: 15px;
+      border-bottom: 2px solid black;
+      transition: 0.5 ease;
+
+      &--is-active {
+       color: $rubin;
+       border-bottom: 2px solid $rubin;
+      }
+    }
+
+  }
+
+  &__content {
+    display: none;
+
+    &--is-active {
+      display: block;
+    }
+  }
+}
+

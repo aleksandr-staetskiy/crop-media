@@ -7,6 +7,7 @@
   $block-name:                &; // #{$block-name}__element
 
   list-style: none;
+  padding: 0;
 
     &__item {
       cursor: pointer;

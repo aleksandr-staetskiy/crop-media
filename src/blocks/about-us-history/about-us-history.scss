@@ -1,0 +1,30 @@
+// В этом файле должны быть стили для БЭМ-блока about-us-history, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.about-us-history {
+
+  $block-name:                &; // #{$block-name}__element
+
+  margin-top: 35px;
+  padding: 15px 0px;
+  background: $gray-light;
+
+  &__inner {
+    @include container();
+  }
+
+  &__grid {
+    @include row();
+  }
+
+  &__left {
+    @include col(xs, 12);
+    @include col(sm, 6);
+  }
+
+  &__right {
+    @include col(xs, 12);
+    @include col(sm, 6);
+  }
+}

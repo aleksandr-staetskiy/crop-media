@@ -53,4 +53,12 @@
       line-height: 20px;
     }
   }
+
+  @media ( max-width: $screen-sm ) {
+    &__general-title {
+      margin-top: 25px;
+     font-size: 2.50rem;
+     line-height: 2rem;
+    }
+  }
 }

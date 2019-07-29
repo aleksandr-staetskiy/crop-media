@@ -33,4 +33,16 @@
     position: relative;
     z-index: 3;
   }
+
+  @media ( max-width: $screen-sm ) {
+
+    &__img {
+      margin-top: 100px;
+    }
+
+    &__title {
+      top: 20%;
+     font-size: 2rem;
+    }
+  }
 }

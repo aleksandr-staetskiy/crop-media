@@ -1,10 +1,12 @@
-// В этом файле должны быть стили для БЭМ-блока vacancy, его элементов,
+// В этом файле должны быть стили для БЭМ-блока about-us-review, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-.vacancy {
+.about-us-review {
 
   $block-name:                &; // #{$block-name}__element
 
-  
+  &__inner {
+    @include container();
+  }
 }
