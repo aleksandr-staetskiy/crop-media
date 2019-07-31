@@ -9,7 +9,7 @@ html(class='page  no-js', lang='ru')
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     //- Edge и ряд мобильных браузеров слишком умны. Отключим это.
-    meta(name='format-detection', content='telephone=no')
+    meta(name='format-detection', content='telephone=yes')
     meta(name='format-detection', content='date=no')
     meta(name='format-detection', content='address=no')
     meta(name='format-detection', content='email=no')
@@ -38,8 +38,8 @@ html(class='page  no-js', lang='ru')
 
     .page__inner
       .page__content
-
         +page-header()
+          a.page-header__phone(href="tel:+78129300025") +7 (812) 930-00-25
           +logo('/')
             svg.logo__icon#Layer_1(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 353.1 68.3')
               style.
@@ -56,7 +56,6 @@ html(class='page  no-js', lang='ru')
               path.st1(d='M238.2 15.1v7.6h-20.1v7.6h18.2v7.6h-15.5l-12.2-22.8zM57 51.3c-2.8 1.2-5.5 1.9-8.2 1.9-5.6 0-10.3-1.8-14-5.5-3.7-3.7-5.6-8.2-5.6-13.7 0-5.4 1.9-9.8 5.7-13.4 3.8-3.6 8.5-5.4 14.2-5.4 1 0 2 .1 2.9.2l6.5 12.5c-1.2-1.5-2.6-2.6-4.3-3.5-1.7-.9-3.4-1.3-5-1.3-3 0-5.4 1-7.4 3.1s-3 4.6-3 7.7c0 3.1 1 5.7 3 7.8 2 2.1 4.5 3.1 7.4 3.1 1.6 0 3.2-.4 4.9-1.2 1.7-.8 3.2-1.8 4.5-3.2l.1.1 3.8 7.3c-1.6 1.4-3.5 2.5-5.5 3.5zM75.4 53.1l-9.7-18.3h3.8c2.1 0 3.7-.5 4.9-1.6 1.2-1 1.7-2.6 1.7-4.6 0-2-.6-3.4-1.7-4.4-1.2-1-2.8-1.5-4.9-1.5h-7.3v5.4l-6.8-13h14.1c5 0 8.9 1.1 11.7 3.5s4.1 5.6 4.1 9.8c0 5.9-2.3 9.9-6.9 12.2l8 12.5h-11zM207.8 49.3h-6.3l-9.1-20.8v24.6h-8.6v-38h10.6l10.2 22.6 5.8-12.7 4.4 8.2zM225.4 53.1h-8.5V37l8.5 15.8zM238.8 53.1h-9.7l-4.1-7.6h13.8zM279.5 15.1h9.7v38h-9.7z')
 
           block nav
-
         block content
 
       .page__footer-wrapper

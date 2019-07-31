@@ -6,13 +6,20 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  position: absolute;
+  left: 0;
   z-index: 3;
   display: inline-block;
   white-space: nowrap;
 
   &__icon {
-    padding-top: 10px;
-    width: 170px;
-    height: 70px;
+    width: 280px;
+    height: 100px;
+  }
+
+  @media ( max-width: $screen-sm ) {
+    &__icon {
+      width: 150px;
+    }
   }
 }

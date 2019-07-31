@@ -28,11 +28,12 @@
     position: relative;
     overflow: hidden;
     margin-bottom: 10px;
+    height: 320px;
 
 
     &-info-block {
       position: absolute;
-      padding: 10px;
+      padding: 10px 20px;
       left: 0;
       right: 0;
       bottom: 0;
@@ -44,10 +45,11 @@
 
     &-text {
       color: #fff;
+      font-size: 14px;
     }
 
     &-title {
-      font-size: 21px;
+      font-size: 18px;
       margin: 0px;
     }
 

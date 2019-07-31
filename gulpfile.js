@@ -70,9 +70,6 @@ let prettyOption = {
 // Список и настройки плагинов postCSS
 let postCssPlugins = [
   autoprefixer({grid: true}),
-  mqpacker({
-    sort: true
-  }),
   atImport(),
   inlineSVG(),
   objectFitImages(),

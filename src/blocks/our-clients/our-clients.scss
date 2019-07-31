@@ -15,7 +15,8 @@
   }
 
   &__item {
-    @include col(xm, 12, $grid-columns, 10px);
+    @include col(xs, 6, $grid-columns, 10px);
+    @include col(xm, 6, $grid-columns, 10px);
     @include col(sm, 6, $grid-columns, 10px);
     @include col(lg, 3, $grid-columns, 16px);
     display: flex;

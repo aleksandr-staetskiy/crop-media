@@ -5,14 +5,31 @@
 .page-header {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 10;
   right: 0;
   width: 100%;
 
   &__inner {
     @include container();
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__phone {
+    position: absolute;
+    right: 10%;
+    top: 2px;
+    color: #fff!important;
+    font-size: 21px;
+    z-index: 10;
+  }
+
+  @media ( max-width: $screen-sm ) {
+    &__phone {
+      top: 35px;
+      right: 5%;
+      font-size: 16px;
+      font-weight: bold;
+    }
   }
 }

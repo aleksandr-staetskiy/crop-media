@@ -3,7 +3,7 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .home-promo {
-  height: 70vh;
+  height: 100vh;
   position: relative;
 
   $block-name:                &; // #{$block-name}__element
@@ -92,8 +92,8 @@
   }
 
   &__title {
-    font-size: 48px;
-    line-height: 45px;
+    font-size: 4rem;
+    line-height: 4rem;
     margin-top: 70px;
     &--red {
       margin-left: 10px;
@@ -105,12 +105,12 @@
 
   &__descr {
     font-size: 18px;
-    font-weight: 600;
   }
 
   @media (max-width: $screen-xl) {
     &__title {
       font-size: 38px;
+      line-height: 2.50rem;
     }
 
     &__descr {

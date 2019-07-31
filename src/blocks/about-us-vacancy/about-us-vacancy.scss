@@ -20,5 +20,9 @@
     @include col(sm, 9, $grid-columns, 10px);
   }
 
+  &__title {
+    text-align: center;
+  }
+
 
 }
