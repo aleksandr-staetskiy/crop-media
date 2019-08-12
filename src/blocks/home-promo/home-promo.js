@@ -220,3 +220,43 @@
     }
   });
 }());
+
+
+
+  let cardReducer = function() {
+
+    const homeCasesNodeList  =  document.querySelectorAll('.home-cases__cell');
+    const homeCasesArrayList =  Array.prototype.slice.call(homeCasesNodeList);
+
+    if( window.screen.width < 480 ) {
+      homeCasesArrayList.slice(-5).forEach( function(item) {
+        item.style.display="none";
+      })
+      document.querySelector('.home-cases__more').classList.add('home-cases__more--visible');
+    }
+
+    window.addEventListener( 'resize', function(e) {
+
+      if (window.screen.width < 480) {
+        homeCasesArrayList.slice(-5).forEach( function(item) {
+          item.style.display="none";
+        })
+      } else {
+        homeCasesArrayList.slice(-5).forEach( function(item) {
+          item.style.display="block";
+        })
+        document.querySelector('.home-cases__more').classList.remove('home-cases__more--visible');
+      }
+    });
+
+  }
+
+  cardReducer();
+
+
+
+
+
+
+
+

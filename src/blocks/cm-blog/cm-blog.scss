@@ -1,0 +1,33 @@
+// В этом файле должны быть стили для БЭМ-блока cm-blog, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.cm-blog {
+
+  height: 100vh;
+  background: rgba(211, 210, 210, 0.781);
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+    @include container();
+  }
+
+  &__promo {
+    padding-top: 120px;
+    @include row();
+
+    &-content {
+      @include col(lg, 6);
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__container {
+    margin-top: 50px;
+  }
+
+}

@@ -1,0 +1,79 @@
+// В этом файле должны быть стили для БЭМ-блока services, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.services {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__container {
+    @include container();
+  }
+
+  &__grid {
+    @include row($grid-gutter-width, 10px, 12px, 16px, 20px, 26px);
+  }
+
+  &__cell {
+    @include col(xs, 12, $grid-columns, 15px);
+    @include col(sm, 6, $grid-columns, 10px);
+    @include col(md, 6, $grid-columns, 12px);
+    @include col(lg, 3, $grid-columns, 16px);
+    @include col(xl, 3, $grid-columns, 20px);
+  }
+
+  &__card {
+    position: relative;
+    display: block;
+    height: 280px;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    &:hover .services__card-hover {
+      transform: translateY(-200px);
+    }
+
+    &-title {
+      color: #fff;
+      font-size: 18px;
+      width: 150px;
+      margin-top: 0;
+      padding: 15px;
+    }
+
+    &-hover {
+      padding: 15px;
+      padding-top: 25px;
+      height: 100%;
+      width: 100%;
+      background: #fff;
+      transition: 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    }
+
+    &-list {
+      list-style: none;
+    }
+
+    &-item {
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__img {
+    height: 200px;
+    width: 100%;
+  }
+
+  &__bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: $rubin;
+    z-index: 3;
+  }
+
+}

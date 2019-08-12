@@ -31,7 +31,7 @@ block content
               |Мы специализируемся на разработке и реализации комплексных
               |стратегий привлечения клиентов из интернета.
 
-            button.btn.home-promo__btn(data-toggle="modal" data-target="#modal-demo-01") кликни меня
+            button.btn.home-promo__btn(data-toggle="modal" data-target="#modal-demo-01") Оставить заявку
 
   section.home-cases
     .home-cases__container
@@ -631,58 +631,48 @@ block content
               .case-card__view-more-button-container
                 a.case-card__view-more-button(href='#') читать
 
+      a.home-cases__more(href="") увидеть больше
+
   section.home-industry
     .home-industry__container
       h4.title.home-industry__title Отраслевые решения
-
-      .glide#classic-slider
-        .glide__track(data-glide-el='track')
-          ul.glide__slides
-            li.glide__slide
-              article.info-card
-                img(src="img/info-card-1.jpg", alt="alt").info-card__img
-                .info-card__body
-                  h5.info-card__title интернет маркетинг
-                  a.info-card__link(href="")
-                    svg.info-card__arrow(id='Слой_1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 98.78 39.34')
-                      path.st0(d='M0 15.68v7.87h19.4l-7.88-7.87zM80.89 0L69.94.19l14.87 15.49H21.17l7.87 7.87h55.77L69.94 39.04l10.83.3 18.01-19.73z')
-
-            li.glide__slide
-              article.info-card
-                img(src="img/info-card-2.jpg", alt="alt").info-card__img
-                .info-card__body
-                  h5.info-card__title интернет маркетинг
-                  a.info-card__link(href="")
-                    svg.info-card__arrow(id='Слой_1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 98.78 39.34')
-                      path.st0(d='M0 15.68v7.87h19.4l-7.88-7.87zM80.89 0L69.94.19l14.87 15.49H21.17l7.87 7.87h55.77L69.94 39.04l10.83.3 18.01-19.73z')
-
-            li.glide__slide
-              article.info-card
-                img(src="img/info-card-3.jpg", alt="alt").info-card__img
-                .info-card__body
-                  h5.info-card__title интернет маркетинг
-                  a.info-card__link(href="")
-                    svg.info-card__arrow(id='Слой_1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 98.78 39.34')
-                      path.st0(d='M0 15.68v7.87h19.4l-7.88-7.87zM80.89 0L69.94.19l14.87 15.49H21.17l7.87 7.87h55.77L69.94 39.04l10.83.3 18.01-19.73z')
-
-            li.glide__slide
-              article.info-card
-                img(src="img/info-card-4.jpg", alt="alt").info-card__img
-                .info-card__body
-                  h5.info-card__title интернет маркетинг
-                  a.info-card__link(href="")
-                    svg.info-card__arrow(id='Слой_1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 98.78 39.34')
-                      path.st0(d='M0 15.68v7.87h19.4l-7.88-7.87zM80.89 0L69.94.19l14.87 15.49H21.17l7.87 7.87h55.77L69.94 39.04l10.83.3 18.01-19.73z')
-
-        .glide__bullets.glide__bullets--no-bottom-indent(data-glide-el='controls[nav]')
-          button.glide__bullet(data-glide-dir='=0')
-          button.glide__bullet(data-glide-dir='=1')
-          button.glide__bullet(data-glide-dir='=2')
-          button.glide__bullet(data-glide-dir='=3')
+      .home-industry__grid
+        .home-industry__cell
+          article.info-card
+            img(src="img/info-card-1.jpg", alt="alt").info-card__img
+            .info-card__body
+              h5.info-card__title Недвижимость
+              a.info-card__link(href="")
+                svg.info-card__arrow(id='Слой_1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 98.78 39.34')
+                  path.st0(d='M0 15.68v7.87h19.4l-7.88-7.87zM80.89 0L69.94.19l14.87 15.49H21.17l7.87 7.87h55.77L69.94 39.04l10.83.3 18.01-19.73z')
+        .home-industry__cell
+          article.info-card
+            img(src="img/info-card-2.jpg", alt="alt").info-card__img
+            .info-card__body
+              h5.info-card__title Ритейл
+              a.info-card__link(href="")
+                svg.info-card__arrow(id='Слой_1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 98.78 39.34')
+                  path.st0(d='M0 15.68v7.87h19.4l-7.88-7.87zM80.89 0L69.94.19l14.87 15.49H21.17l7.87 7.87h55.77L69.94 39.04l10.83.3 18.01-19.73z')
+        .home-industry__cell
+          article.info-card
+            img(src="img/info-card-3.jpg", alt="alt").info-card__img
+            .info-card__body
+              h5.info-card__title Медицина
+              a.info-card__link(href="")
+                svg.info-card__arrow(id='Слой_1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 98.78 39.34')
+                  path.st0(d='M0 15.68v7.87h19.4l-7.88-7.87zM80.89 0L69.94.19l14.87 15.49H21.17l7.87 7.87h55.77L69.94 39.04l10.83.3 18.01-19.73z')
+        .home-industry__cell
+          article.info-card
+            img(src="img/info-card-4.jpg", alt="alt").info-card__img
+            .info-card__body
+              h5.info-card__title Fashion
+              a.info-card__link(href="")
+                svg.info-card__arrow(id='Слой_1' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 98.78 39.34')
+                  path.st0(d='M0 15.68v7.87h19.4l-7.88-7.87zM80.89 0L69.94.19l14.87 15.49H21.17l7.87 7.87h55.77L69.94 39.04l10.83.3 18.01-19.73z')
 
   section.performance-marketing
     .performance-marketing__container
-      h5.performance-marketing__title Performance marketing
+      h5.performance-marketing__title Performance Marketing
       .glide#classic-slider
         .glide__track(data-glide-el='track')
           ul.glide__slides
@@ -754,6 +744,59 @@ block content
           button.glide__bullet(data-glide-dir='=1')
           button.glide__bullet(data-glide-dir='=2')
           button.glide__bullet(data-glide-dir='=3')
+
+  section.services
+    .services__container
+      h4.title.services__general-title Наши услуги
+      .services__grid
+        .services__cell
+          a(href="").services__card
+            img.services__img(src="img/internet-marketing.jpg", alt="internet marketing")
+            footer.services__bottom
+              h6.services__card-title Интрернет-Маркетинг
+            .services__card-hover
+              ul.services__card-list
+                li.services__card-item Нейминг
+                li.services__card-item Фирменный стиль
+                li.services__card-item Логотип
+                li.services__card-item Сувенирная продукция
+
+        .services__cell
+          a(href="").services__card
+            img.services__img(src="img/audit.jpg", alt="audit")
+            footer.services__bottom
+              h6.services__card-title Интрернет-Маркетинг
+            .services__card-hover
+              ul.services__card-list
+                li.services__card-item Нейминг
+                li.services__card-item Фирменный стиль
+                li.services__card-item Логотип
+                li.services__card-item Сувенирная продукция
+
+        .services__cell
+          a(href="").services__card
+            img.services__img(src="img/brending.jpg", alt="brending")
+            footer.services__bottom
+              h6.services__card-title Интрернет-Маркетинг
+            .services__card-hover
+              ul.services__card-list
+                li.services__card-item Нейминг
+                li.services__card-item Фирменный стиль
+                li.services__card-item Логотип
+                li.services__card-item Сувенирная продукция
+
+        .services__cell
+          a(href="").services__card
+            img.services__img(src="img/perf-marketing.jpg", alt="performac-marketing")
+            footer.services__bottom
+              h6.services__card-title Интрернет-Маркетинг
+            .services__card-hover
+              ul.services__card-list
+                li.services__card-item Нейминг
+                li.services__card-item Фирменный стиль
+                li.services__card-item Логотип
+                li.services__card-item Сувенирная продукция
+
 
 
   +modal('modal-demo-01', 'Форма обратной связи', 'some')
