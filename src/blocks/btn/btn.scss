@@ -26,6 +26,11 @@
   background-image: none;
   cursor: pointer;
 
+  &--unfilled {
+    background: none;
+    border: 1px solid #fff;
+  }
+
   &:hover,
   &:focus {
     text-decoration: none;
@@ -56,6 +61,8 @@
       pointer-events: none;
     }
   }
+
+
 
   // &__icon {
   //   display: inline-block;

@@ -1,0 +1,25 @@
+extends ../pug/layout.pug
+
+block meta
+  title О компании
+  meta(name='description', content='')
+
+block nav
+  +main-nav('10')
+
+block content
+  .pf-promo
+    .pf-promo__inner
+      .pf-promo__grid
+        .pf-promo__left-side
+          h1.pf-promo__title Performance -
+            br
+            | маркетинг
+          .pf-promo__descr
+            p Мы специализируемся на разработке и реализации
+              | комплексных стратегий привлечения клиентов из интернета.
+          button.btn.btn--unfilled.pf-promo__btn Оставить заявку
+        .pf-promo__right-side
+          .pf-promo__img-wrap
+            img.pf-promo__img(src="img/ft-promo.png", alt="grafik")
+

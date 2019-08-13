@@ -1,0 +1,68 @@
+// В этом файле должны быть стили для БЭМ-блока pf-promo, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.pf-promo {
+  background: #363636;
+  color: #fff;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+    @include container();
+  }
+
+  &__grid {
+    padding-top: 125px;
+    @include row();
+    justify-content: space-between;
+  }
+
+  &__left-side {
+    @include col(sm, 5, $grid-columns, 10px);
+  }
+
+  &__right-side {
+    @include col(sm, 6, $grid-columns, 10px);
+  }
+
+  &__title {
+    font-size: 62px;
+    margin-top: 20px;
+    line-height: 3.5rem;
+  }
+
+  &__img {
+    animation: rotate-90-cw 25s linear infinite;
+    &-wrap {
+      margin: 0 auto;
+      height: 400px;
+      width: 400px;
+    }
+  }
+
+  &__descr {
+    font-size: 14px;
+    width: 260px;
+  }
+
+  &__btn {
+    color: #fff;
+    margin-top: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+
+@keyframes rotate-90-cw {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+}
+
+
