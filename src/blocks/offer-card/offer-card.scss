@@ -1,0 +1,18 @@
+// В этом файле должны быть стили для БЭМ-блока offer-card, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.offer-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  height: 230px;
+  bottom: 0;
+  color: #fff;
+  margin-bottom: 15px;
+  background: $rubin;
+  overflow: hidden;
+  &__inner {
+    padding: 30px;
+  }
+}

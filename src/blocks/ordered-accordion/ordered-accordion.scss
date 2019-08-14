@@ -1,0 +1,37 @@
+// В этом файле должны быть стили для БЭМ-блока ordered-accordion, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.ordered-accordion {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__container {
+    @include container();
+  }
+
+  &__inner {
+    max-width: 900px;
+  }
+
+  &__content {
+    color: #30302f;
+    padding: 15px;
+    display: none;
+  }
+
+  &__title {
+    cursor: pointer;
+    color: $rubin;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 15px;
+    border: 1px solid rgba(216, 216, 216, 0.479);
+    & p {
+      margin: 0;
+    }
+    &.active + .ordered-accordion__content {
+      display: block;
+    }
+  }
+}

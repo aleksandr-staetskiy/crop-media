@@ -9,5 +9,26 @@ function initAccordion() {
 }
 initAccordion();
 
+function orderedAccordion() {
+
+  const orderedAccordionTitle   =  document.querySelectorAll('.ordered-accordion__title');
+  // const orderedAccordionContent =  document.querySelectorAll('.ordered-accordion__content');
+
+  for (  let i = 0; i < orderedAccordionTitle.length; i++) {
+    orderedAccordionTitle[i].addEventListener( 'click', function() {
+
+      if ( !(this.classList.contains('active')) ) {
+        for ( let i = 0; i < orderedAccordionTitle.length; i++) {
+          orderedAccordionTitle[i].classList.remove('active');
+        }
+        this.classList.add('active');
+      }
+    })
+  }
+}
+
+orderedAccordion();
+
+
 
 
