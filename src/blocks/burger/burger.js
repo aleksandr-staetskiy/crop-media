@@ -16,8 +16,22 @@ ready(function(){
     var targetClassToggle = this.getAttribute('data-target-class-toggle');
     if (targetId && targetClassToggle) {
       this.classList.toggle('burger--close');
-      document.getElementById(targetId).classList.toggle(targetClassToggle);
+      openMobileMenu();
     }
   }
+
+  const openMobileMenu = () => {
+    const burgerOverlay = document.querySelector('.burger-overlay');
+    burgerOverlay.classList.toggle('burger-overlay--active')
+}
+
+const burgerServices = document.getElementById('burger-services');
+const burgerSocials = document.getElementById('burger-intouch');
+burgerServices.addEventListener( 'click', addActiveItem)
+burgerSocials.addEventListener( 'click', addActiveItem)
+
+function addActiveItem() {
+  this.nextElementSibling.classList.toggle('active')
+}
 
 });

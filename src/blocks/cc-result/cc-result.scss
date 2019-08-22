@@ -1,0 +1,34 @@
+// В этом файле должны быть стили для БЭМ-блока cc-result, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.cc-result {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__container {
+    @include container();
+  }
+
+  &__section-title {
+    margin-top: 45px;
+    display: block;
+  }
+
+  &__title {
+    max-width: 400px;
+    font-weight: normal;
+    font-size: 16px;
+  }
+
+  &__charts {
+    @include row();
+  }
+
+  &__chart {
+    @include col(sm, 4, $grid-columns, 30);
+    height: 350px;
+  }
+
+
+}

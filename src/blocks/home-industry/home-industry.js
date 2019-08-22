@@ -43,8 +43,6 @@ function initDoubleSlider() {
     })
 
     glide.mount()
-  } else {
-    console.log( " dosen't work" )
   }
 
 };

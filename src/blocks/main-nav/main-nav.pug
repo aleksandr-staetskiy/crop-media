@@ -12,6 +12,8 @@ mixin main-nav(selectedID)
   include main-nav.data.pug
 
   nav.main-nav#nav&attributes(attributes)
+    a(href="")
+      img.main-nav__phone(src="img/call-back.png", alt="phone icon")
     +burger('Показать главное меню', 'nav', 'main-nav--open')(class='main-nav__toggler')
     ul.main-nav__list
       li.main-nav__item.main-nav__item--about

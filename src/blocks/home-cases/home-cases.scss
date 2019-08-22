@@ -47,6 +47,11 @@
     }
   }
 
+  &__icon {
+    max-width: 120px;
+    max-height: 95px;
+  }
+
   &__front {
     display: flex;
     justify-content: center;

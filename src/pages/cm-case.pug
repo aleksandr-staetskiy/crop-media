@@ -1,0 +1,107 @@
+extends ../pug/layout.pug
+
+block meta
+  title
+  meta(name='description', content='')
+
+//- block append head
+//-   link(rel='stylesheet', href='css/some.css')
+
+block nav
+  +main-nav('-1')
+
+block content
+  section.cc-promo
+    .cc-promo__inner
+      .cc-promo__content
+        .cc-promo__name
+          h1.cc-promo__section-title Электроный каталог
+        .cc-promo__product
+          img.cc-promo__product-img(src="img/cm-case-promo.png", alt="warsons")
+
+      .cc-promo__info-line
+        .cc-promo__info-block
+          span.cc-promo__info-title Клиент:
+          p.cc-promo__info-description Watsons
+            | косметика и товары для дома
+
+        .cc-promo__info-block
+          span.cc-promo__info-title Цель:
+          p.cc-promo__info-description Создание интерактивного электронного каталога и
+            | реализация стратегии продвижения.
+
+        .cc-promo__info-block
+          span.cc-promo__info-title Цель:
+          p.cc-promo__info-description • Удобный электронный каталог, который освещает все акционные товары месяца. <br/>
+            | • Средняя цена клика за привлечение целевой аудитории составила 10,97 руб.
+
+  .target
+    .target__container
+      .target__content
+        span.title.target__title Цель
+        .target__text
+          p Основной целью было создать электронный каталог,
+            | который освещает все акционные товары месяца. Разработать и реализовать
+            |стратегию продвижения каталога и привлечь максимум целевого трафика, используя
+            |различные каналы, но не превышая стоимости клика в 15 рублей.
+
+  section.cc-approach.cc-approach--theme-main
+    .cc-approach__container
+      h3.title
+      .cc-approach__stages
+        .cc-approach__stage
+          .cc-approach__info-block
+            span.cc-approach__info-title 1. Создание каталогов
+            ul.cc-approach__list
+              li.cc-approach__list-item.cc-approach__list-item--titeled Этапы:
+              li.cc-approach__list-item Подготовка графического материала.
+              li.cc-approach__list-item Верстка каталога в Readymag.
+              li.cc-approach__list-item Применение эффектов анимации и добавление ссылок к элементам каталога.
+              li.cc-approach__list-item Адаптация для мобильных устройств.
+              li.cc-approach__list-item Выгрузка в формате html для передачи клиенту.
+
+          .cc-approach__icon
+            img.cc-approach__img(src="img/cc-approach-1.png", alt="monitor icon")
+
+        .cc-approach__stage
+          .cc-approach__info-block
+            span.cc-approach__info-title 2 Продвижение
+            ul.cc-approach__list
+              li.cc-approach__list-item.cc-approach__list-item--titeled Контекстная реклама Яндекс.Директ и Google Ads по следующим направлениям:
+              li.cc-approach__list-item Поисковая рекламная кампания по брендовым запросам.
+              li.cc-approach__list-item Размещение в рекламных сетях по брендовым запросам.
+              li.cc-approach__list-item Конкурентным и общим запросам.
+              li.cc-approach__list-item Ретаргетинговые рекламные кампании на посетителей сайта.
+              li.cc-approach__list-item Выгрузка в формате html для передачи клиенту.
+
+          .cc-approach__icon
+            img.cc-approach__img(src="img/cc-approach-2.png", alt="monitor icon")
+
+  section.cc-result
+    .cc-result__container
+      span.title.cc-result__section-name Результат
+      h4.cc-result__title Удобный электронный каталог, который освещает все акционные товары месяца.
+
+      .glide#cases-slider
+        .glide__track(data-glide-el='track')
+          ul.glide__slides
+            li.glide__slide
+              .cc-result__main-slide
+                img.cc-resul__slide-img(src="img/slide-1.jpg", alt="")
+
+        .glide__bullets.cc-result__slider-bullet(data-glide-el='controls[nav]')
+          button.glide__bullet(data-glide-dir='=0')
+
+      .cc-result__charts
+        .cc-result__chart
+          img.cc-result__chart-img(src="img/chart.jpg", alt="chart")
+
+        .cc-result__chart
+          img.cc-result__chart-img(src="img/chart.jpg", alt="chart")
+
+        .cc-result__chart
+          img.cc-result__chart-img(src="img/chart.jpg", alt="chart")
+
+
+
+

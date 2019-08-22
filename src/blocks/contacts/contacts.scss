@@ -6,32 +6,19 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  &__wrap {
-    position: relative;
+  &__header {
+    height: 110px;
+    background: $brown;
   }
 
   &__info {
-    position: relative;
-    @include container();
-  }
-
-  &__content {
     color: #fff;
     position: absolute;
-    right: 7%;
-  }
-
-  &__overlay {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.605);
+    top: 35vh;
+    right: 15%;
   }
 
   &__title {
-    margin-top: 100%;
     margin-bottom: 30px;
   }
 

@@ -82,12 +82,10 @@
     background-color: $rubin;
     padding: 10px 22px;
     margin-top: 20px;
-    border-bottom: 4px solid rgb(148, 38, 85);
     transition: 0.4s ease;
     &:hover {
       color: $rubin;
       background-color: #fff;
-      border-bottom: 4px solid rgb(189, 189, 189);
     }
   }
 

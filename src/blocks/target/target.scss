@@ -1,0 +1,25 @@
+// В этом файле должны быть стили для БЭМ-блока target, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.target {
+  padding-top: 35px;
+  padding-bottom: 45px;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__container {
+    @include container();
+  }
+
+  &__content {
+    max-width: 720px;
+  }
+
+  &__title {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+
+}

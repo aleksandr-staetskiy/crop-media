@@ -8,7 +8,7 @@ block nav
   +main-nav('10')
 
 block content
-  .pf-promo
+  section.pf-promo
     .pf-promo__inner
       .pf-promo__grid
         .pf-promo__left-side
@@ -23,14 +23,14 @@ block content
           .pf-promo__img-wrap
             img.pf-promo__img(src="img/ft-promo.png", alt="grafik")
 
-  .pf-way
+  section.pf-way
     .pf-way__inner
       h2.title.pf-way__general-title Как это работает?
       img.pf-way__scheme(src="img/pf-way.jpg", alt="")
 
-  .ordered-accordion
+  section.ordered-accordion
     .ordered-accordion__container
-      h3.title Наши подходы к решению задач
+      h3.title.ordered-accordion__section-title Наши подходы к решению задач
       .ordered-accordion__inner
         .ordered-accordion__title.active
           p 01. Анализируем ваш бренд, бизнес и маркетинг
