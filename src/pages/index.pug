@@ -332,17 +332,18 @@ block content
 
 
 
-  +modal('modal-demo-01', 'Форма обратной связи', 'some')
+  +modal('modal-demo-01', 'Заполните форму и мы ответим на ваши вопросы более подробно', 'grey')
     .modal__body
       form.general-form(action="")
         label.general-form__label(for="userName") Имя
         input.general-form__field(type="text" placeholder="Ваше имя, сэр")
-        span.general-form__help-info Имя юзера. Не менее 3-х символов. Обязательно.
+
         label.general-form__label(for="userName") номер
         input.general-form__field(type="text" placeholder="Ваше номер, сэр")
-        span.general-form__help-info Имя юзера. Не менее 3-х символов. Обязательно.
+
         label.general-form__label(for="userName") мэйл
         input.general-form__field(type="text" placeholder="Ваше мэйл, сэр")
+        
         label.general-form__label(for="userName") комментарий
         textarea.general-form__text-field(type="text" placeholder="Ваше коммент, сэр")
         button.btn(type="submit") клик-клак

@@ -12,7 +12,8 @@
 
   display: none;
   position: fixed;
-  z-index: $z-index-modal;
+  align-items: center;
+  z-index: 999999;
   top: 0;
   right: 0;
   bottom: 0;
@@ -53,6 +54,11 @@
     height: auto;
     background-color: #fff;
     outline: 0;
+
+    &--grey {
+      padding: 25px;
+      background-color: $gray-light;
+    }
   }
 
   &__header {
@@ -71,8 +77,13 @@
 
   &__close {
     position: absolute !important; // stylelint-disable-line  declaration-no-important
-    top: 20px;
+    top: 15px;
     right: 5px;
+    width: 35px;
+    height: 35px;
+    & span {
+      margin-top: 15px;
+    }
   }
 
   &__body {
