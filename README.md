@@ -1,9 +1,6 @@
-# Стартовый проект с gulp  ![Test Status](https://travis-ci.org/nicothin/NTH-start-project.svg?branch=master) [![devDependencies Status](https://david-dm.org/nicothin/NTH-start-project/dev-status.svg)](https://david-dm.org/nicothin/NTH-start-project?type=dev) [![dependencies Status](https://david-dm.org/nicothin/NTH-start-project/status.svg)](https://david-dm.org/nicothin/NTH-start-project)
-
-
 ## Парадигма
 
-- Именование классов по БЭМ, разметка в [pug](https://pugjs.org/), стилизация [Sass](http://sass-lang.com/). См. [как работать с CSS-препроцессорами и БЭМ](http://nicothin.github.io/idiomatic-pre-CSS/)
+- Именование классов по БЭМ, разметка в [pug](https://pugjs.org/), стилизация [Sass](http://sass-lang.com/). См. [как работать с CSS-препроцессорами и БЭМ]
 - Каждый БЭМ-блок в своей папке внутри `src/blocks/`. Один БЭМ-блок — один pug-файл, один scss-файл, один js-файл.
 - Список использованных в проекте доп. файлов — в `config.js`.
 - Есть глобальные файлы: стилевые (стили печати), js (по умолчанию пуст), шрифты, картинки.
@@ -155,11 +152,6 @@ node createBlock.js demo-block pug js # создаст папку блока, de
 
 ## Модульная сетка (flexbox)
 
-По умолчанию в сборку берётся [файл с примесями](https://github.com/nicothin/NTH-start-project/blob/master/src/scss/mixins/grid-mixins.scss), возвращающими правила модульной сетки. Cелекторов в CSS не добавляет, нужно писать семантические селекторы и вызывать примеси. Настройки по умолчанию вынесены в переменные (`$grid-columns: 12;` и `$grid-gutter-width: 30px;`).
-
-- Любое кол-во колонок, в т.ч. разная колоночность на разных ширинах вьюпорта.
-- Любые промежутки между колонками, в т.ч. разные на разных ширинах вьюпорта.
-
 ```scss
 .promo {
 
@@ -200,10 +192,4 @@ node createBlock.js demo-block pug js # создаст папку блока, de
 }
 ```
 
-Посмотреть примеры и попробовать вживую можно в [этом примере с codepen.io](https://codepen.io/nicothin/pen/aJEOwE?editors=1100).
 
-
-## Нравится проект?
-
-Ставьте звезду в верхнем правом углу и/или [угостите меня кофе](https://money.yandex.ru/to/41001252765094), переведя сколь угодно символическую сумму.
-# teeeeeeeeest
