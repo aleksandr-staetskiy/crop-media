@@ -412,7 +412,65 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
               </div>
             </div>
           </div>
+          <div class="services-accordion">
+            <div class="services-accordion__title active">
+              <p>Интернет-Маркетинг</p>
+            </div>
+            <div class="services-accordion__content">
+              <ul class="services-accordion__list">
+                <li class="services__card-item">Стратегия</li>
+                <li class="services__card-item">Контекстная реклама</li>
+                <li class="services__card-item">Таргетированная реклама в соц сетях</li>
+                <li class="services__card-item">SMM</li>
+                <li class="services__card-item">SEO</li>
+                <li class="services__card-item">SERM</li>
+              </ul>
+            </div>
+            <div class="services-accordion__title">
+              <p>Аудит и аналитика</p>
+            </div>
+            <div class="services-accordion__content">
+              <ul class="services-accordion__list">
+                <li class="services__card-item">Настройка веб-аналитики</li>
+                <li class="services__card-item">Usability аудит сайта</li>
+                <li class="services__card-item">Сквозная аналитика</li>
+              </ul>
+            </div>
+            <div class="services-accordion__title">
+              <p>Брендинг</p>
+            </div>
+            <div class="services-accordion__content">
+              <ul class="services-accordion__list">
+                <li class="services__card-item">Нейминг</li>
+                <li class="services__card-item">Фирменный стиль</li>
+                <li class="services__card-item">Логотип</li>
+                <li class="services__card-item">Сувенирная продукция</li>
+              </ul>
+            </div>
+            <div class="services-accordion__title">
+              <p>Offline</p>
+            </div>
+            <div class="services-accordion__content">
+              <ul class="services-accordion__list">
+                <li class="services__card-item">Радио</li>
+                <li class="services__card-item">TV</li>
+                <li class="services__card-item">Наружная реклама</li>
+                <li class="services__card-item">Транзит</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__container">
+          <div class="contacts__info">
+            <h1 class="contacts__title">Контакты</h1>
+            <div class="contacts__address">
+              <p>Санкт-Петербург,</p>Большая Посадская, 16
+            </div><a class="contacts__number" href="tel:">+7 (812) 425-61-41</a><a class="contacts__mail" href="">adv@cropmedia</a><button class="btn home-promo__btn">Оставить заявку</button>
+          </div>
+        </div>
+        <div class="contacts__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1997.3697824267463!2d30.323801915587744!3d59.95918938188369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696316869860aef%3A0x5eb00370f89412b3!2z0JHQvtC70YzRiNCw0Y8g0J_QvtGB0LDQtNGB0LrQsNGPINGD0LsuLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsw!5e0!3m2!1sru!2sru!4v1568383455450!5m2!1sru!2sru" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
       </section>
       <div class="modal  modal--grey" id="modal-demo-01" tabindex="-1" role="dialog">
         <div class="modal__dialog" role="document">
@@ -421,9 +479,9 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
               <h4 class="modal__title">Заполните форму и мы ответим на ваши вопросы более подробно</h4>
             </div>
             <div class="modal__body">
-              <form class="general-form" action=""><label class="general-form__label" for="userName">Имя</label><input class="general-form__field" type="text" placeholder="Ваше имя"><label class="general-form__label" for="userName">номер</label><input class="general-form__field" type="text" placeholder="Ваш номер"><label class="general-form__label" for="userName">мэйл</label><input class="general-form__field" type="text" placeholder="Ваш мэйл"><label class="general-form__label" for="userName">комментарий</label><textarea class="general-form__text-field" type="text" placeholder="Ваш комментарий"></textarea><button class="btn" type="submit">отправить</button></form>
+              <form class="general-form" action=""><label class="general-form__label" for="userName">Имя</label><input class="general-form__field" type="text" placeholder="Ваше имя"><label class="general-form__label" for="userName">номер</label><input class="general-form__field" type="text" placeholder="Ваш номер"><label class="general-form__label" for="userName">мэйл</label><input class="general-form__field" type="text" placeholder="Ваш мэйл"><label class="general-form__label" for="userName">комментарий</label><textarea class="general-form__text-field" type="text" placeholder="Ваш комментарий"></textarea></form>
             </div>
-            <div class="modal__footer"><button class="btn" type="button" data-dismiss="modal">Закрыть</button></div>
+            <div class="modal__footer"><button class="btn general-form__btn" type="button" data-dismiss="modal">Закрыть</button></div>
           </div>
         </div>
       </div>
@@ -471,7 +529,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   <li class="page- footer__item"><a class="page-footer__link" href="">Сувенирная продукция</a></li>
                 </ul>
               </div>
-              <div class="page-footer__cell-2">
+              <div class="page-footer__cell-1">
                 <ul class="page-footer__list">
                   <li class="page-footer__item page-footer__item--heading"><a class="page-footer__link footer__link-heading" href="">Perfomance-маркетинг</a></li>
                 </ul>
@@ -481,18 +539,32 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
                   <li class="page-footer__item page-footer__item--heading"><a class="page-footer__link footer__link-heading" href="">Маркетинг продаж</a></li>
                 </ul>
               </div>
+              <div class="page-footer__cell-1">
+                <ul class="page-footer__list">
+                  <li class="page-footer__item page-footer__item--heading"><a class="page-footer__link footer__link-heading" href="">Offline</a></li>
+                </ul>
+              </div>
               <div class="page-footer__cell-2"><span class="page-footer__heading">Кейсы</span></div>
               <div class="page-footer__cell-2"><span class="page-footer__heading">Offline</span></div>
               <div class="page-footer__cell-2"><span class="page-footer__heading">Контакты</span></div>
               <div class="page-footer__cell-2"><span class="page-footer__heading">Блог</span></div>
             </div>
-            <div class="page-footer__mobile-view">
-              <div class="page-footer__address">Санкт-Петербург, <br> Большая Посадская улица, 16</div><a class="page-footer__number" href="tel:+78129300025">+7 (812) 930-00-25</a><a class="page-footer__mail" href="mailto:adv@cropmedia.ru">adv@cropmedia.ru</a>
-                <div class="social page-footer__social"></div>
+            <div class="page-footer__grid page-footer__grid--bottom">
+              <div class="page-footer__cell-4 page-footer__cell-4--fx-end">
                 <p class="page-footer__agreement">2019, cropmedia.ru <br>Соглашение о персональных данных</p>
               </div>
+              <div class="page-footer__cell-2">
+                <div class="page-footer__address">Санкт-Петербург, <br> Большая Посадская, 16</div><br><a class="page-footer__number" href="tel:+78129300025">+7 (812) 930-00-25 <br></a><a class="page-footer__mail" href="mailto:adv@cropmedia.ru">adv@cropmedia.ru</a><br>
+                    <div class="social page-footer__social"><a class="social__link" href="https://www.instagram.com/crop_media/" target="_blank"><img class="social__icon" src="img/insta.svg" alt="insta" /></a><a class="social__link" href="https://vk.com/crop.media" target="_blank"><img class="social__icon" src="img/vk.svg" alt="vk" /></a></div>
+                </div>
+              </div>
+              <div class="page-footer__mobile-view">
+                <div class="page-footer__address">Санкт-Петербург, <br> Большая Посадская улица, 16</div><a class="page-footer__number" href="tel:+78129300025">+7 (812) 930-00-25</a><a class="page-footer__mail" href="mailto:adv@cropmedia.ru">adv@cropmedia.ru</a>
+                  <div class="social page-footer__social"><a class="social__link" href="https://www.instagram.com/crop_media/" target="_blank"><img class="social__icon" src="img/insta.svg" alt="insta" /></a><a class="social__link" href="https://vk.com/crop.media" target="_blank"><img class="social__icon" src="img/vk.svg" alt="vk" /></a></div>
+                  <p class="page-footer__agreement">2019, cropmedia.ru <br>Соглашение о персональных данных</p>
+                </div>
+              </div>
             </div>
-          </div>
       </footer>
       <div class="burger-overlay">
         <ul class="burger-overlay__menu">
@@ -515,6 +587,7 @@ if(~navigator.appVersion.indexOf("Linux"))cth('linux');
               <li class="burger-overlay__submenu-item"><a class="burger-overlay__submenu-link">Наш ВК</a></li>
             </ul>
           </li>
+          <li class="burger-overlay__meny-item"><a class="burger-overlay__menu-link">Offline</a></li>
         </ul>
       </div>
     </div>
