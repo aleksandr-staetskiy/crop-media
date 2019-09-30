@@ -23,11 +23,6 @@
     @include col(xl, 3, $grid-columns);
   }
 
-  &__title {
-    font-size: 41px;
-    margin-bottom: 30px;
-    margin-top: 55px;
-  }
 
   @media (max-width: $screen-sm) {
 

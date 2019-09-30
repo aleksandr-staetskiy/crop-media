@@ -3,6 +3,7 @@
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
 .page-footer {
+  color: #fff;
   background-color: $brown;
   padding-top: 55px;
   padding-bottom: 35px;
@@ -13,12 +14,31 @@
 
   &__grid {
     @include row();
+
+    &--bottom {
+      justify-content: space-between;
+    }
+  }
+
+  &__cell-1 {
+    @include col(lg, 1, $grid-columns, 16px);
+    @include col(xl, 1, $grid-columns, 20px);
   }
 
   &__cell-2 {
     @include col(lg, 2, $grid-columns, 16px);
     @include col(xl, 2, $grid-columns, 20px);
-}
+  }
+
+  &__cell-4 {
+    @include col(lg, 4, $grid-columns, 16px);
+    @include col(xl, 4, $grid-columns, 20px);
+
+    &--fx-end {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
 
   &__cell-10 {
     @include col(lg, 10, $grid-columns, 16px);
@@ -52,6 +72,12 @@
     }
   }
 
+  &__mail {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+
   &__item  {
     &--heading {
       text-decoration: underline;
@@ -71,25 +97,19 @@
 
     &__mobile-view {
       display: block;
-      font-size: 22px;
+      font-size: 18px;
       color: #fff;
     }
 
     &__number {
       color: #fff;
       display: block;
-      margin-top: 30px;
-    }
-
-    &__mail {
-      color: #fff;
-      display: block;
-      text-decoration: none;
+      margin-top: 20px;
     }
 
     &__agreement {
       font-size: 18px;
-      margin-top: 20px;
+      margin-top: 10px;
     }
   }
 }

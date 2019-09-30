@@ -8,7 +8,6 @@
 
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   margin-top: $typo-margin-vertical;
   margin-bottom: $typo-margin-vertical;
   padding: 0;
@@ -21,7 +20,6 @@
   &__link {
     display: block;
     padding: 5px;
-    background-color: $gray;
 
     #{$block-name}__link-wrap--fb & {
       background-color: $color-fb;
@@ -49,5 +47,11 @@
 
   &__text {
     @include hide-text;
+  }
+
+  &__icon {
+    width: 28px;
+    height: 28px;
+    margin: 0 5px;
   }
 }

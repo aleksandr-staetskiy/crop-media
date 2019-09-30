@@ -2,6 +2,10 @@
 
 // const ready = require('../../js/utils/documentReady.js');
 
-// ready(function(){
-//   
-// });
+//  ready(function(){
+//    console.log('evwwbt');
+
+
+//   });
+
+

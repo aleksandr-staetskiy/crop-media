@@ -9,6 +9,14 @@
   right: 0;
   width: 100%;
 
+  &--fixed {
+    top: 0;
+    padding-bottom: 20px;
+    position: fixed;
+    background: $brown;
+    z-index: 99999;
+  }
+
   &__inner {
     @include container();
     display: flex;
@@ -30,6 +38,10 @@
       right: 5%;
       font-size: 16px;
       font-weight: bold;
+    }
+
+    &--fixed {
+      height: 90px;
     }
   }
 }

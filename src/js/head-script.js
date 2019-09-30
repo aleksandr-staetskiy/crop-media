@@ -9,3 +9,4 @@ if(!!window.chrome&&(!!window.chrome.webstore||!!window.chrome.runtime))cth('chr
 if(~navigator.appVersion.indexOf("Win"))cth('windows');
 if(~navigator.appVersion.indexOf("Mac"))cth('osx');
 if(~navigator.appVersion.indexOf("Linux"))cth('linux');
+

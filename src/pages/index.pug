@@ -40,7 +40,7 @@ block content
         .home-cases__cell
           section.case-card__wrapper
             .case-card
-              img.home-cases__icon(src="img/logo-bs.png", alt="bs")
+              img.home-cases__icon(src="img/Etalon.png", alt="bs")
             .case-card__hover-state.case-card__hover-state--watsons
               header.case-card__hover-header
                 h2.case-card__heading watsons
@@ -71,7 +71,7 @@ block content
         .home-cases__cell
           section.case-card__wrapper
             .case-card
-              img.home-cases__icon(src="img/logo-farneo.png", alt="bs")
+              img.home-cases__icon(src="img/logo-ryadi.png", alt="bs")
             .case-card__hover-state.case-card__hover-state--watsons
               header.case-card__hover-header
                 h2.case-card__heading watsons
@@ -102,8 +102,8 @@ block content
 
         .home-cases__cell
           section.case-card__wrapper
-            .case-card
-              img.home-cases__icon(src="img/logo-ryadi.png", alt="bs")
+            .case-card.case-card--lsr
+              img.home-cases__icon(src="img/LRS.png", alt="bs")
             .case-card__hover-state.case-card__hover-state--watsons
               header.case-card__hover-header
                 h2.case-card__heading watsons
@@ -119,7 +119,7 @@ block content
         .home-cases__cell
           section.case-card__wrapper
             .case-card
-              img.home-cases__icon(src="img/logo-watsons.png", alt="bs")
+              img.home-cases__icon(src="img/logo-yolkki.png", alt="bs")
             .case-card__hover-state.case-card__hover-state--watsons
               header.case-card__hover-header
                 h2.case-card__heading watsons
@@ -138,7 +138,7 @@ block content
               img.case-card__logo(src="", alt="sport mix")
             .case-card__hover-state.case-card__hover-state--off.case-card__hover-state--oktoklub
               header.case-card__hover-header
-                h2.case-card__heading Оптоклуб Ряды
+                h2.case-card__heading Farneo
               p.case-card__hover-title розничная и оптовая торговля
               p.case-card__hover-description
                 |плюс
@@ -151,7 +151,7 @@ block content
         .home-cases__cell
           section.case-card__wrapper
             .case-card
-              img.home-cases__icon(src="img/logo-yolkki.png", alt="bs")
+              img.home-cases__icon(src="img/vorota.png", alt="bs")
             .case-card__hover-state.case-card__hover-state--oktoklub
               header.case-card__hover-header
                 h2.case-card__heading Оптоклуб Ряды
@@ -205,14 +205,14 @@ block content
 
   section.performance-marketing
     .performance-marketing__container
-      h5.performance-marketing__title Performance Marketing
+      h5.title Performance Marketing
       .glide#classic-slider
         .glide__track(data-glide-el='track')
           ul.glide__slides
             li.glide__slide
               section.case-card__wrapper
-                .case-card
-                  img.case-card__logo(src="img/logo-bs.png", alt="bely sad")
+                .case-card.case-card--lsr
+                  img.case-card__logo(src="img/LRS.png", alt="lsr")
                 .case-card__hover-state.case-card__hover-state--watsons
                   header.case-card__hover-header
                     h2.case-card__heading watsons
@@ -259,7 +259,7 @@ block content
             li.glide__slide
               section.case-card__wrapper
                 .case-card
-                  img.case-card__logo(src="img/logo-watsons.png", alt="watsons")
+                  img.case-card__logo(src="img/logo-farneo.svg", alt="watsons")
                 .case-card__hover-state.case-card__hover-state--watsons
                   header.case-card__hover-header
                     h2.case-card__heading watsons
@@ -283,34 +283,35 @@ block content
       h4.title.services__general-title Наши услуги
       .services__grid
         .services__cell
-          a(href="").services__card
+          .services__card
             img.services__img(src="img/internet-marketing.jpg", alt="internet marketing")
             footer.services__bottom
-              h6.services__card-title Интрернет-Маркетинг
+              h6.services__card-title Интернет-Маркетинг
             .services__card-hover
               ul.services__card-list
-                li.services__card-item Нейминг
-                li.services__card-item Фирменный стиль
-                li.services__card-item Логотип
-                li.services__card-item Сувенирная продукция
+                li.services__card-item Стратегия
+                li.services__card-item Контекстная реклама
+                li.services__card-item Таргетированная реклама в соц сетях
+                li.services__card-item SMM
+                li.services__card-item SEO
+                li.services__card-item SERM
 
         .services__cell
-          a(href="").services__card
+          .services__card
             img.services__img(src="img/audit.jpg", alt="audit")
             footer.services__bottom
-              h6.services__card-title Интрернет-Маркетинг
+              h6.services__card-title Аудит и аналитика
             .services__card-hover
               ul.services__card-list
-                li.services__card-item Нейминг
-                li.services__card-item Фирменный стиль
-                li.services__card-item Логотип
-                li.services__card-item Сувенирная продукция
+                li.services__card-item Настройка веб-аналитики
+                li.services__card-item Usability аудит сайта
+                li.services__card-item Сквозная аналитика
 
         .services__cell
-          a(href="").services__card
+          .services__card
             img.services__img(src="img/brending.jpg", alt="brending")
             footer.services__bottom
-              h6.services__card-title Интрернет-Маркетинг
+              h6.services__card-title Брендинг
             .services__card-hover
               ul.services__card-list
                 li.services__card-item Нейминг
@@ -319,36 +320,87 @@ block content
                 li.services__card-item Сувенирная продукция
 
         .services__cell
-          a(href="").services__card
+          .services__card
             img.services__img(src="img/perf-marketing.jpg", alt="performac-marketing")
             footer.services__bottom
-              h6.services__card-title Интрернет-Маркетинг
+              h6.services__card-title Offline
             .services__card-hover
               ul.services__card-list
-                li.services__card-item Нейминг
-                li.services__card-item Фирменный стиль
-                li.services__card-item Логотип
-                li.services__card-item Сувенирная продукция
+                li.services__card-item Радио
+                li.services__card-item TV
+                li.services__card-item Наружная реклама
+                li.services__card-item Транзит
 
+      .services-accordion
+
+        .services-accordion__title.active
+          p Интернет-Маркетинг
+        .services-accordion__content
+          ul.services-accordion__list
+            li.services__card-item Стратегия
+            li.services__card-item Контекстная реклама
+            li.services__card-item Таргетированная реклама в соц сетях
+            li.services__card-item SMM
+            li.services__card-item SEO
+            li.services__card-item SERM
+
+        .services-accordion__title
+          p Аудит и аналитика
+        .services-accordion__content
+          ul.services-accordion__list
+            li.services__card-item Настройка веб-аналитики
+            li.services__card-item Usability аудит сайта
+            li.services__card-item Сквозная аналитика
+
+
+        .services-accordion__title
+          p Брендинг
+        .services-accordion__content
+          ul.services-accordion__list
+            li.services__card-item Нейминг
+            li.services__card-item Фирменный стиль
+            li.services__card-item Логотип
+            li.services__card-item Сувенирная продукция
+
+        .services-accordion__title
+          p Offline
+        .services-accordion__content
+          ul.services-accordion__list
+            li.services__card-item Радио
+            li.services__card-item TV
+            li.services__card-item Наружная реклама
+            li.services__card-item Транзит
+
+  section.contacts
+    .contacts__container
+      .contacts__info
+        h1.contacts__title Контакты
+        .contacts__address
+          p Санкт-Петербург,
+          |Большая Посадская, 16
+        a.contacts__number(href="tel:") +7 (812) 425-61-41
+        a.contacts__mail(href="") adv@cropmedia
+        button.btn.home-promo__btn Оставить заявку
+    .contacts__map
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1997.3697824267463!2d30.323801915587744!3d59.95918938188369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696316869860aef%3A0x5eb00370f89412b3!2z0JHQvtC70YzRiNCw0Y8g0J_QvtGB0LDQtNGB0LrQsNGPINGD0LsuLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsw!5e0!3m2!1sru!2sru!4v1568383455450!5m2!1sru!2sru" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
 
   +modal('modal-demo-01', 'Заполните форму и мы ответим на ваши вопросы более подробно', 'grey')
     .modal__body
       form.general-form(action="")
         label.general-form__label(for="userName") Имя
-        input.general-form__field(type="text" placeholder="Ваше имя, сэр")
+        input.general-form__field(type="text" placeholder="Ваше имя")
 
         label.general-form__label(for="userName") номер
-        input.general-form__field(type="text" placeholder="Ваше номер, сэр")
+        input.general-form__field(type="text" placeholder="Ваш номер")
 
         label.general-form__label(for="userName") мэйл
-        input.general-form__field(type="text" placeholder="Ваше мэйл, сэр")
-        
+        input.general-form__field(type="text" placeholder="Ваш мэйл")
+
         label.general-form__label(for="userName") комментарий
-        textarea.general-form__text-field(type="text" placeholder="Ваше коммент, сэр")
-        button.btn(type="submit") клик-клак
+        textarea.general-form__text-field(type="text" placeholder="Ваш комментарий")
     .modal__footer
-      button.btn(type='button', data-dismiss='modal') Закрыть
+      button.btn.general-form__btn(type='button', data-dismiss='modal') Закрыть
 
 block footer
 

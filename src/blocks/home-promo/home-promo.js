@@ -204,7 +204,7 @@
     // of different video formats to add
     src: [
       {
-        src: 'video/test.mp4',
+        src: 'http://cropmedia.ru/wp-content/themes/crop/test.mp4',
         type: 'video/mp4'
       },
 
@@ -252,6 +252,7 @@
   }
 
   cardReducer();
+
 
 
 

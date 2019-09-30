@@ -5,6 +5,8 @@
 .home-promo {
   height: 100vh;
   position: relative;
+  // background: url(../img/promo-to-bg.jpg)no-repeat center center;
+  background-size: cover;
 
   $block-name:                &; // #{$block-name}__element
 
@@ -50,7 +52,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #000;
+    background: url(http://cropmedia.ru/wp-content/themes/crop/img/promo-to-bg.jpg)no-repeat center center;
     background-size: cover;
     background-position: center;
   }
@@ -103,6 +105,16 @@
 
   &__descr {
     font-size: 18px;
+  }
+
+  @media (min-width: $screen-xxl) {
+    &__title {
+      font-size: 4.5rem;
+    }
+
+    &__descr {
+      font-size: 1.3rem;
+    }
   }
 
   @media (max-width: $screen-xl) {

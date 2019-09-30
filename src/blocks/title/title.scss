@@ -5,8 +5,10 @@
 .title {
 
   $block-name:                &; // #{$block-name}__element
-
+  color: #30302f;
   font-family: inherit;
   font-size: $tite-size;
   font-weight: 700;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }

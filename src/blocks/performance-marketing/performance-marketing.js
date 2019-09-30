@@ -13,6 +13,8 @@ for ( let i = 0; i < classicSliders.length; i++) {
         perView: 2
       },
       480: {
+        autoplay: 4000,
+        animationDuration: 1000,
         perView: 1
       }
     }

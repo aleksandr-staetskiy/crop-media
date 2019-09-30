@@ -6,7 +6,7 @@ mixin main-nav(selectedID)
   //- Принимает:
   //-   selectedID {string} - id пункта меню (по умолчанию — из main-nav.data.pug)
   //- Вызов:
-        +main-nav('1')
+    +main-nav('1')
 
   //- подключаем файл со структурой данных блока
   include main-nav.data.pug
@@ -35,7 +35,7 @@ mixin main-nav(selectedID)
             a.main-nav__link-hidden(href="") Отзывы
 
       li.main-nav__item.main-nav__item--cases
-        a.main-nav__link.main-nav__link-pseudo(href="") Услуги
+        a.main-nav__link.main-nav__link-pseudo(href="performance.html") Услуги
         .main-nav__list-hidden.main-nav__list-hidden--cases
           ul
             li.main-nav__item-hidden
@@ -68,6 +68,10 @@ mixin main-nav(selectedID)
               a.main-nav__link-hidden(href="") Логотип
             li.main-nav__item-hidden
               a.main-nav__link-hidden(href="") Сувенирная продукция
+          ul
+            li.main-nav__item-hidden
+              a.main-nav__link-hidden(href="") Офлайн
+
       li.main-nav__item
         a.main-nav__link(href="") Кейсы
       li.main-nav__item
@@ -78,8 +82,8 @@ mixin main-nav(selectedID)
         a.main-nav__link.main-nav__link-pseudo(href="") На связи
         ul.main-nav__list-hidden.main-nav__list-hidden--services
           li.main-nav__item-hidden
-            a.main-nav__link-hidden(href="") Вконтакте
+            a.main-nav__link-hidden(href="https://vk.com/crop.media") Вконтакте
           li.main-nav__item-hidden
-            a.main-nav__link-hidden(href="") Instagram
+            a.main-nav__link-hidden(href="https://www.instagram.com/crop_media/") Instagram
           li.main-nav__item-hidden
-            a.main-nav__link-hidden(href="") Почта
+            a.main-nav__link-hidden(href="mailto:adv@cropmedia.ru", target="_top") Почта

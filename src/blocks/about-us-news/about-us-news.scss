@@ -30,6 +30,14 @@
     margin-bottom: 10px;
     height: 320px;
 
+    &-more {
+      color: $white;
+      transition: .6s ease-out;
+      &:hover {
+        transform: scale(1.2);
+        color: rgb(241, 241, 241);
+      }
+    }
 
     &-info-block {
       position: absolute;
